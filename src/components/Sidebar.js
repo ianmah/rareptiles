@@ -22,13 +22,14 @@ const MenuItem = styled.a`
     }
 `
 
-const Sidebar = () => {
+const Sidebar = ({ setActivePage }) => {
 
     return (
         <StyledSidebar>
             <h1>Rareptiles</h1>
-            <MenuItem>Marketplace</MenuItem>
-            <MenuItem>Collection</MenuItem>
+            <MenuItem onClick={() => setActivePage('home')}>Home</MenuItem>
+            <MenuItem onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
+            <MenuItem onClick={() => setActivePage('collection')}>Collection</MenuItem>
         </StyledSidebar>
     )
 

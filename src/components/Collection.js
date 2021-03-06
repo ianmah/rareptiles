@@ -7,7 +7,6 @@ const StyledCollection = styled.div`
 `
 
 const Collection = ({ contract }) => {
-
     const [collection, setCollection] = useState({})
 
     useEffect(() => {
