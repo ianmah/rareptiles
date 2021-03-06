@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar'
 import Mint from './components/Mint'
 import './App.css'
 import Collection from './components/Collection'
+import Shelter from './components/Shelter'
 
 const Container = styled.div`
   display: flex;
@@ -46,6 +47,11 @@ function App() {
         {activePage === 'collection' &&
           <>
             <Collection contract={contracts.reptile} />
+          </>
+        }
+        {activePage === 'shelter' &&
+          <>
+            <Shelter contract={contracts.reptile} />
           </>
         }
         

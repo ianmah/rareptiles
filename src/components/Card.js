@@ -14,8 +14,10 @@ const StyledCard = styled.div`
 `
 
 const StyledImg = styled.img`
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px 10px 0 0;
+    height: 60%;
+    object-fit: cover
 `
 const ContentWrapper = styled.div`
     padding: 16px;
