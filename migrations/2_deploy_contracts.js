@@ -1,8 +1,6 @@
-const Item = artifacts.require("Item");
-const Character = artifacts.require("Character");
+const Reptile = artifacts.require("Reptile");
 
 module.exports = function(deployer) {
-  deployer.deploy(Item);
-  deployer.deploy(Character);
+  deployer.deploy(Reptile);
 
 };

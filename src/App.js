@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
+import { loadReptileContract, loadWeb3 } from './utility/web3'
+import Sidebar from './components/Sidebar'
+import Mint from './components/Mint'
+import './App.css'
+import Collection from './components/Collection'
+
+const Container = styled.div`
+  display: flex;
+`
+
+const Content = styled.div`
+  padding: 20px;
+`
 
 function App() {
+  const [contracts, setContracts] = useState({})
+  const [activePage, setActivePage] = useState('home')
+  const [market, setMarket] = useState({})
+
+  useEffect(() => {
+    const getContract = async () => {
+      const reptile = await loadReptileContract()
+      setContracts({...contracts, reptile})
+      window.reptileContract = reptile
+    }
+    loadWeb3()
+    getContract()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Sidebar activePage={activePage} setActivePage={setActivePage} />
+      <Content>
+        {activePage === 'home' &&
+          <>
+            <Mint contract={contracts.reptile} />
+          </>
+        }
+        {activePage === 'marketplace' &&
+          <>
+            <Collection contract={contracts.reptile} isMarket={true} />
+          </>
+        }
+        {activePage === 'collection' &&
+          <>
+            <Collection contract={contracts.reptile} />
+          </>
+        }
+        
+      </Content>
+    </Container>
+  )
 }
 
-export default App;
+export default App
