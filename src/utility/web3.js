@@ -18,10 +18,10 @@ export const loadReptileContract = async () => {
     window.account = accounts[0]
 
     const networkId = await web3.eth.net.getId();
-    const itemNetworkData = Reptile.networks[networkId];
-    if (itemNetworkData) {
+    const reptileNetwork = Reptile.networks[networkId];
+    if (reptileNetwork) {
       const abi = Reptile.abi;
-      const address = itemNetworkData.address;
+      const address = reptileNetwork.address;
       const reptileContract = new web3.eth.Contract(abi, address);
 
       return reptileContract
