@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledSidebar = styled.div`
-    width: 300px;
+    min-width: 220px;
     float: left;
     height: 100vh;
     background: #fff;
@@ -32,6 +32,7 @@ const Sidebar = ({ activePage, setActivePage }) => {
             <MenuItem active={activePage === 'home'} onClick={() => setActivePage('home')}>Home</MenuItem>
             <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
             <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
+            <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>
         </StyledSidebar>
     )
 

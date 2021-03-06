@@ -36,6 +36,7 @@ const Collection = ({ contract, isMarket }) => {
                         uri: item.uri,
                         forSale: item.forSale,
                         salePrice: item.salePrice.toNumber(),
+                        rarity: item.rarity,
                     }
                 }
             }
@@ -55,7 +56,7 @@ const Collection = ({ contract, isMarket }) => {
             <Title>{isMarket ? "Marketplace" : "Collection"}</Title>
             <StyledCollection>
             {
-                Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} {...item} />)
+                Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} item={item} />)
             }
             </StyledCollection>
         </CollectionContainer>

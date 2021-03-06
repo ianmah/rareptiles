@@ -9,9 +9,9 @@ const MintContainer = styled.div`
 `
 
 const Mint = ({ contract }) => {
-    const mintReptile = (species, name, uri) => {
+    const mintReptile = (species, name, uri, rarity) => {
         window.reptileContract.methods
-            .mint(species, name, uri)
+            .mint(species, name, uri, rarity)
             .send({ from: window.account })
             .once('receipt', receipt => {
                 console.log('mint complete', receipt)
@@ -19,7 +19,7 @@ const Mint = ({ contract }) => {
     }
 
     const manualMint = () => {
-        mintReptile('ligma logma', 'Liger', 'http://crownridgetigers.com/wp-content/uploads/2013/12/liger.jpg')
+        mintReptile('ligma logma', 'Liger', 'http://crownridgetigers.com/wp-content/uploads/2013/12/liger.jpg', 3)
     }
 
     return (

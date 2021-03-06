@@ -2,26 +2,43 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
 import { Title } from './Header'
+import { RARITY, ASSESSMENT_RARITY } from '../constants'
 
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
+    position: relative;
+    transition: all 200ms ease;
+    &:hover {
+        box-shadow: 0 0 0 3px #f5971d;
+    }
 `
 
 const StyledImg = styled.img`
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px 10px 0 0;
+    height: 60%;
+    object-fit: cover;
 `
 const ContentWrapper = styled.div`
     padding: 16px;
     p {
       color: #555;
     }
+`
+
+const Description = styled.p`
+    margin: 0.3em 0;
+`
+
+const CTA = styled(Button)`
+    position: absolute;
+    bottom: 1.3em;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -42,7 +59,8 @@ const buyReptile = (tokenId) => {
         })
 }
 
-const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
+const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ...props }) => {
+    const {species, name, id, uri, rarity} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -59,32 +77,43 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
 
     }
 
+    const adopt = (item) => {
+        window.reptileContract.methods
+            .mint(species, name, uri, rarity)
+            .send({ from: window.account })
+            .once('receipt', receipt => {
+                console.log('mint complete', receipt)
+                setViewCard(false)
+            })
+    }
+
     const buy = () => {
         buyReptile(id)
     }
 
     return (
-        <StyledCard>
+        <StyledCard {...props}>
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
               <Title>{name}</Title>
-                <p>
-                  {`${species} #${id}`}
-                </p>
+                <Description>
+                    {RARITY[rarity]} {species} {id && `#${id}`} 
+                </Description>
+                {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
+                {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
+                {sellWindow && <div>
+                    Enter the amount you want to sell for:
+                    <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                    <CTA onClick={confirmSell}>Confirm</CTA>
+                    </div>
+                }
+                {
+                    isMarket && <>
+                    Price: {salePrice}
+                    <CTA onClick={buy}>Buy</CTA>
+                    </>
+                }
             </ContentWrapper>
-            {!isMarket && <button onClick={sellSomething}>Sell</button>}
-            {sellWindow && <div>
-                Enter the amount you want to sell for:
-                <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                <Button onClick={confirmSell}>Confirm</Button>
-                </div>
-            }
-            {
-                isMarket && <>
-                Price: {salePrice}
-                <Button onClick={buy}>Buy</Button>
-                </>
-            }
         </StyledCard>
     )
 }
