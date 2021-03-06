@@ -1,5 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
+import Button from './Button'
+import { Title } from './Header'
 
+const MintContainer = styled.div`
+    box-sizing: border-box;
+    padding: 8px;
+`
 
 const Mint = ({ contract }) => {
     const mintReptile = (species, name, uri) => {
@@ -16,10 +23,10 @@ const Mint = ({ contract }) => {
     }
 
     return (
-        <div>
-            Mint
-            <button onClick={manualMint}>mint something</button>
-        </div>
+        <MintContainer>
+            <Title>Mint</Title>
+            <Button onClick={manualMint}>Mint</Button>
+        </MintContainer>
     )
 }
 
