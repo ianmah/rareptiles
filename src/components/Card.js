@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { Title } from './Header'
 
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -14,6 +15,12 @@ const StyledCard = styled.div`
 const StyledImg = styled.img`
     max-width: 100%;
     border-radius: 10px 10px 0 0;
+`
+const ContentWrapper = styled.div`
+    padding: 16px;
+    p {
+      color: #555;
+    }
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -33,7 +40,6 @@ const buyReptile = (tokenId) => {
             console.log('Buy complete', receipt)
         })
 }
-
 
 const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
     const [sellAmount, setSellAmount] = useState('')
@@ -59,7 +65,12 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
     return (
         <StyledCard>
             <StyledImg src={uri} alt={name} />
-            {id} {name}
+            <ContentWrapper>
+              <Title>{name}</Title>
+                <p>
+                  {`${species} #${id}`}
+                </p>
+            </ContentWrapper>
             {!isMarket && <button onClick={sellSomething}>Sell</button>}
             {sellWindow && <div>
                 Enter the amount you want to sell for:

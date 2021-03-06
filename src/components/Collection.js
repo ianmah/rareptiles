@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Card from './Card'
+import { Title } from './Header'
+
+const CollectionContainer = styled.div`
+    box-sizing: border-box;
+    padding: 8px;
+`
 
 const StyledCollection = styled.div`
     display: flex;
@@ -43,14 +49,14 @@ const Collection = ({ contract, isMarket }) => {
     }, [contract])
 
     return (
-        <div>
-            Collection
+        <CollectionContainer>
+            <Title>Collection</Title>
             <StyledCollection>
             {
                 Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} {...item} />)
             }
             </StyledCollection>
-        </div>
+        </CollectionContainer>
     )
 }
 
