@@ -7,7 +7,7 @@
 - Install [Metamask extension](https://metamask.io/download.html)
 - Create a new wallet
 - Add a new network by clicking "Ethereum Mainnet" > "Custom RPC"
-- Network name: `localganache`, New RPC Url: `<RPC SERVER in Ganache>` probably `HTTP://127.0.0.1:7545`, Chain ID: `1337`
+- Network name: `ngrokganache`, New RPC Url: `http://2719ac0aba99.ngrok.io/`, Chain ID: `1337`
 - Run `truffle compile` to compile the contracts
 - Run `truffle migrate` to deploy the contracts to your local ethereum network
 - `yarn start` and connect wallet :money_with_wings:

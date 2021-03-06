@@ -16,11 +16,13 @@ const Content = styled.div`
 
 function App() {
   const [contracts, setContracts] = useState({})
+  const [activePage, setActivePage] = useState('home')
 
   useEffect(() => {
     const getContract = async () => {
       const reptile = await loadReptileContract()
       setContracts({...contracts, reptile})
+      window.reptileContract = reptile
     }
     loadWeb3()
     getContract()
@@ -28,10 +30,19 @@ function App() {
 
   return (
     <Container>
-      <Sidebar/>
+      <Sidebar setActivePage={setActivePage} />
       <Content>
-        <Mint contract={contracts.reptile} />
-        <Collection contract={contracts.reptile} />
+        {activePage === 'home' &&
+          <>
+            <Mint contract={contracts.reptile} />
+          </>
+        }
+        {activePage === 'collection' &&
+          <>
+            <Collection contract={contracts.reptile} />
+          </>
+        }
+        
       </Content>
     </Container>
   )

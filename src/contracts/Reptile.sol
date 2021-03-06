@@ -35,7 +35,7 @@ contract Reptile is ERC721Full {
 
       require(reptile_exists[_tokenId]);
       require(owner == msg.sender);
-
+      require(reptilesOnSale[_tokenId] == 0);
       reptilesOnSale[_tokenId] = _salePrice;
 
       emit Approval(owner, address(this), _tokenId);
