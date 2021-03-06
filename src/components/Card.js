@@ -26,7 +26,7 @@ const listReptile = (tokenId, salePrice) => {
 }
 
 
-const Card = ({ species, name, id, uri }) => {
+const Card = ({ species, name, id, uri, isMarket, forSale }) => {
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -47,12 +47,15 @@ const Card = ({ species, name, id, uri }) => {
         <StyledCard>
             <StyledImg src={uri} alt={name} />
             {id} {name}
-            <button onClick={sellSomething}>Sell</button>
+            {!isMarket && <button onClick={sellSomething}>Sell</button>}
             {sellWindow && <div>
                 Enter the amount you want to sell for:
                 <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
                 <button onClick={confirmSell}>Confirm</button>
                 </div>
+            }
+            {
+                isMarket && "For Sale"
             }
         </StyledCard>
     )
