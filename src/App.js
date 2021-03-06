@@ -31,7 +31,7 @@ function App() {
 
   return (
     <Container>
-      <Sidebar setActivePage={setActivePage} />
+      <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <Content>
         {activePage === 'home' &&
           <>
