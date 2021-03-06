@@ -13,6 +13,10 @@ const StyledCard = styled.div`
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
     position: relative;
+    transition: all 200ms ease;
+    &:hover {
+        box-shadow: 0 0 0 3px #f5971d;
+    }
 `
 
 const StyledImg = styled.img`
@@ -55,7 +59,7 @@ const buyReptile = (tokenId) => {
         })
 }
 
-const Card = ({ item, isMarket, salePrice, isShelter, ...props }) => {
+const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ...props }) => {
     const {species, name, id, uri, rarity} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
@@ -79,6 +83,7 @@ const Card = ({ item, isMarket, salePrice, isShelter, ...props }) => {
             .send({ from: window.account })
             .once('receipt', receipt => {
                 console.log('mint complete', receipt)
+                setViewCard(false)
             })
     }
 

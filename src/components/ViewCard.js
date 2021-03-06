@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import { RARITY } from '../constants'
+import { Title } from './Header'
+import { RARITY, RARITY_FULL } from '../constants'
 
 const Container = styled.div`
     width: 100vw;
@@ -18,8 +19,8 @@ const Content = styled.div`
 `
 
 const StyledImg = styled.img`
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 `
@@ -28,11 +29,10 @@ const StyledButton = styled(Button)`
     float: right;
 `
 
-
 const StyledCard = styled.div`
     background: #fff;
-    width: 500px;
-    height: 600px;
+    width: 550px;
+    height: 640px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -41,6 +41,17 @@ const StyledCard = styled.div`
 `
 
 const ViewCard = ({ setViewCard, item }) => {
+    const {species, name, uri, rarity} = item
+    const adopt = () => {
+        window.reptileContract.methods
+            .mint(species, name, uri, rarity)
+            .send({ from: window.account })
+            .once('receipt', receipt => {
+                console.log('mint complete', receipt)
+                setViewCard(false)
+            })
+    }
+
     return (
         <Container>
             <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
@@ -48,8 +59,11 @@ const ViewCard = ({ setViewCard, item }) => {
                 <StyledCard>
                     <StyledImg src={item.uri} alt={item.name} />
                     <br/>
-                    {item.name}
-                    {RARITY[item.rarity]}
+                    <Title>{item.name}</Title>
+                    {RARITY_FULL[item.rarity]}
+                    <br/>
+                    <br/>
+                    <Button onClick={adopt}>Adopt</Button>
                 </StyledCard>
             </Content>
         </Container>
