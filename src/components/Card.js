@@ -25,6 +25,15 @@ const listReptile = (tokenId, salePrice) => {
         })
 }
 
+const buyReptile = (tokenId) => {
+    window.reptileContract.methods
+        .buy(tokenId)
+        .send({ from: window.account })
+        .once('receipt', receipt => {
+            console.log('Buy complete', receipt)
+        })
+}
+
 
 const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
     const [sellAmount, setSellAmount] = useState('')
@@ -43,6 +52,10 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
 
     }
 
+    const buy = () => {
+        buyReptile(id)
+    }
+
     return (
         <StyledCard>
             <StyledImg src={uri} alt={name} />
@@ -55,7 +68,10 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
                 </div>
             }
             {
-                isMarket && `Price: ${salePrice}`
+                isMarket && <>
+                Price: {salePrice}
+                <button onClick={buy}>Buy</button>
+                </>
             }
         </StyledCard>
     )

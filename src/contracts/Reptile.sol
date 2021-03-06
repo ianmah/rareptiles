@@ -49,6 +49,8 @@ contract Reptile is ERC721Full {
 
   function buy(uint256 _tokenId) external payable {
       address buyer = msg.sender;
+      address seller = ownerOf(_tokenId);
+      // address payable sellerPayAddress = address(uint160(seller));
       uint payedPrice = msg.value;
 
       require(getApproved(_tokenId) == address(this));
@@ -59,11 +61,13 @@ contract Reptile is ERC721Full {
       require(payedPrice >= salePrice);
 
       // pay the seller
-      // buyer.transfer(salePrice);
-      transferFrom(ownerOf(_tokenId), buyer, _tokenId);
-      reptiles[_tokenId].forSale = false;
+      // sellerPayAddress.transfer(salePrice);
+
+      // transfer token
+      transferFrom(seller, buyer, _tokenId);
 
       // remove token from reptilesOnSale
+      reptiles[_tokenId].forSale = false;
       delete reptilesSalePrice[_tokenId];
   }
 
