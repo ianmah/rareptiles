@@ -17,6 +17,7 @@ const Content = styled.div`
 function App() {
   const [contracts, setContracts] = useState({})
   const [activePage, setActivePage] = useState('home')
+  const [market, setMarket] = useState({})
 
   useEffect(() => {
     const getContract = async () => {
@@ -35,6 +36,11 @@ function App() {
         {activePage === 'home' &&
           <>
             <Mint contract={contracts.reptile} />
+          </>
+        }
+        {activePage === 'marketplace' &&
+          <>
+            <Collection contract={contracts.reptile} isMarket={true} />
           </>
         }
         {activePage === 'collection' &&

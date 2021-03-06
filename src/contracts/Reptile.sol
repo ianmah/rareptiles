@@ -5,7 +5,8 @@ import "./ERC721Full.sol";
 contract Reptile is ERC721Full {
   mapping(uint256 => ReptileStruc) public reptiles;
   mapping(uint256 => bool) public reptile_exists;
-  mapping(uint256 => uint) public reptilesOnSale;
+  mapping(uint256 => uint) public reptilesSalePrice;
+  uint public donations = 0;
 
   uint nonce = 0;
 
@@ -14,20 +15,22 @@ contract Reptile is ERC721Full {
     string species;
     string name;
     string uri;
+    bool forSale;
+    uint salePrice;
   }
   
   constructor() ERC721Full("Reptile", "REPTILE") public {}
 
   function mint(string memory _species, string memory _name, string memory _uri) public {
     uint _tokenId = totalSupply();
-    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri});
+    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false, salePrice: 0});
     reptile_exists[_tokenId] = true;
 
     _mint(msg.sender, _tokenId);
   }
 
-  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri) {
-    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri);
+  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri, bool _forSale, uint _salePrice) {
+    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri, reptiles[_tokenId].forSale, reptiles[_tokenId].salePrice);
   }
 
   function setForSale(uint256 _tokenId, uint _salePrice) external {
@@ -35,28 +38,37 @@ contract Reptile is ERC721Full {
 
       require(reptile_exists[_tokenId]);
       require(owner == msg.sender);
-      require(reptilesOnSale[_tokenId] == 0);
-      reptilesOnSale[_tokenId] = _salePrice;
+      require(reptilesSalePrice[_tokenId] == 0);
+      reptilesSalePrice[_tokenId] = _salePrice;
+
+      reptiles[_tokenId].forSale = true;
+      reptiles[_tokenId].salePrice = _salePrice;
 
       emit Approval(owner, address(this), _tokenId);
   }
 
   function buy(uint256 _tokenId) external payable {
       address buyer = msg.sender;
+      address seller = ownerOf(_tokenId);
+      // address payable sellerPayAddress = address(uint160(seller));
       uint payedPrice = msg.value;
 
       require(getApproved(_tokenId) == address(this));
       require(reptile_exists[_tokenId]);
 
-      uint salePrice = reptilesOnSale[_tokenId];
+      uint salePrice = reptilesSalePrice[_tokenId];
 
       require(payedPrice >= salePrice);
 
       // pay the seller
-      transferFrom(ownerOf(_tokenId), buyer, _tokenId);
+      // sellerPayAddress.transfer(salePrice);
+
+      // transfer token
+      transferFrom(seller, buyer, _tokenId);
 
       // remove token from reptilesOnSale
-      delete reptilesOnSale[_tokenId];
+      reptiles[_tokenId].forSale = false;
+      delete reptilesSalePrice[_tokenId];
   }
 
 }
