@@ -55,7 +55,7 @@ const Collection = ({ contract, isMarket }) => {
             <Title>{isMarket ? "Marketplace" : "Collection"}</Title>
             <StyledCollection>
             {
-                Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} {...item} />)
+                Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} item={item} />)
             }
             </StyledCollection>
         </CollectionContainer>

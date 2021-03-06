@@ -6,7 +6,7 @@ import { Title } from './Header'
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 350px;
+    height: 375px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -44,7 +44,8 @@ const buyReptile = (tokenId) => {
         })
 }
 
-const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
+const Card = ({ item, isMarket, salePrice, isShelter }) => {
+    const {species, name, id, uri} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -61,6 +62,10 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
 
     }
 
+    const adopt = (id) => {
+        alert(id)
+    }
+
     const buy = () => {
         buyReptile(id)
     }
@@ -73,20 +78,21 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
                 <p>
                   {`${species} #${id}`}
                 </p>
+                {!isShelter && !isMarket && <Button onClick={sellSomething}>Sell</Button>}
+                {isShelter && <Button onClick={() => adopt(id)}>Adopt</Button>}
+                {sellWindow && <div>
+                    Enter the amount you want to sell for:
+                    <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                    <Button onClick={confirmSell}>Confirm</Button>
+                    </div>
+                }
+                {
+                    isMarket && <>
+                    Price: {salePrice}
+                    <Button onClick={buy}>Buy</Button>
+                    </>
+                }
             </ContentWrapper>
-            {!isMarket && <button onClick={sellSomething}>Sell</button>}
-            {sellWindow && <div>
-                Enter the amount you want to sell for:
-                <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                <Button onClick={confirmSell}>Confirm</Button>
-                </div>
-            }
-            {
-                isMarket && <>
-                Price: {salePrice}
-                <Button onClick={buy}>Buy</Button>
-                </>
-            }
         </StyledCard>
     )
 }

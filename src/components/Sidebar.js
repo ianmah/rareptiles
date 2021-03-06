@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledSidebar = styled.div`
-    width: 300px;
+    min-width: 220px;
     float: left;
     height: 100vh;
     background: #fff;
