@@ -36,6 +36,7 @@ const Collection = ({ contract, isMarket }) => {
                         uri: item.uri,
                         forSale: item.forSale,
                         salePrice: item.salePrice.toNumber(),
+                        rarity: item.rarity,
                     }
                 }
             }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
 import { Title } from './Header'
+import { RARITY } from '../constants'
 
 const StyledCard = styled.div`
     background: #fff;
@@ -45,7 +46,7 @@ const buyReptile = (tokenId) => {
 }
 
 const Card = ({ item, isMarket, salePrice, isShelter }) => {
-    const {species, name, id, uri} = item
+    const {species, name, id, uri, rarity} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -62,8 +63,15 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
 
     }
 
-    const adopt = (id) => {
-        alert(id)
+    const adopt = (item) => {
+        alert(JSON.stringify(item, null, 4))
+        
+        window.reptileContract.methods
+            .mint(species, name, uri, rarity)
+            .send({ from: window.account })
+            .once('receipt', receipt => {
+                console.log('mint complete', receipt)
+            })
     }
 
     const buy = () => {
@@ -76,10 +84,10 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
             <ContentWrapper>
               <Title>{name}</Title>
                 <p>
-                  {`${species} #${id}`}
+                  {`${species} #${id} ${RARITY[rarity]}`}
                 </p>
                 {!isShelter && !isMarket && <Button onClick={sellSomething}>Sell</Button>}
-                {isShelter && <Button onClick={() => adopt(id)}>Adopt</Button>}
+                {isShelter && <Button onClick={() => adopt(item)}>Adopt</Button>}
                 {sellWindow && <div>
                     Enter the amount you want to sell for:
                     <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />

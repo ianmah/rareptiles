@@ -6,6 +6,10 @@ contract Reptile is ERC721Full {
   mapping(uint256 => ReptileStruc) public reptiles;
   mapping(uint256 => bool) public reptile_exists;
   mapping(uint256 => uint) public reptilesSalePrice;
+  mapping(uint => uint) public rarityDistribution;
+
+  enum Rarity {MEX, EX, CR, EN, VU, LC}
+
   uint public donations = 0;
 
   uint nonce = 0;
@@ -17,20 +21,22 @@ contract Reptile is ERC721Full {
     string uri;
     bool forSale;
     uint salePrice;
+    Rarity rarity;
   }
   
   constructor() ERC721Full("Reptile", "REPTILE") public {}
 
-  function mint(string memory _species, string memory _name, string memory _uri) public {
+  function mint(string memory _species, string memory _name, string memory _uri, uint _rarityRating) public {
     uint _tokenId = totalSupply();
-    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false, salePrice: 0});
+    Rarity _rarity = Rarity(_rarityRating);
+    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false, salePrice: 0, rarity: _rarity});
     reptile_exists[_tokenId] = true;
 
     _mint(msg.sender, _tokenId);
   }
 
-  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri, bool _forSale, uint _salePrice) {
-    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri, reptiles[_tokenId].forSale, reptiles[_tokenId].salePrice);
+  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri, bool _forSale, uint _salePrice, uint _rarity) {
+    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri, reptiles[_tokenId].forSale, reptiles[_tokenId].salePrice, uint(reptiles[_tokenId].rarity));
   }
 
   function setForSale(uint256 _tokenId, uint _salePrice) external {
@@ -50,13 +56,13 @@ contract Reptile is ERC721Full {
   function buy(uint256 _tokenId) external payable {
       address buyer = msg.sender;
       address seller = ownerOf(_tokenId);
-      address payable sellerPayAddress = address(uint160(seller));
-      uint payedPrice = msg.value;
+      // address payable sellerPayAddress = address(uint160(seller));
+      // uint payedPrice = msg.value;
 
     //   require(getApproved(_tokenId) == address(this), "unapproved");
       require(reptile_exists[_tokenId], "reptile does not exist");
 
-      uint salePrice = reptilesSalePrice[_tokenId];
+      // uint salePrice = reptilesSalePrice[_tokenId];
 
     //   require(payedPrice >= salePrice);
 
