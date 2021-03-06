@@ -19,7 +19,7 @@ const StyledImg = styled.img`
     width: 100%;
     border-radius: 10px 10px 0 0;
     height: 60%;
-    object-fit: cover
+    object-fit: cover;
 `
 const ContentWrapper = styled.div`
     padding: 16px;
@@ -55,7 +55,7 @@ const buyReptile = (tokenId) => {
         })
 }
 
-const Card = ({ item, isMarket, salePrice, isShelter }) => {
+const Card = ({ item, isMarket, salePrice, isShelter, ...props }) => {
     const {species, name, id, uri, rarity} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
@@ -74,8 +74,6 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
     }
 
     const adopt = (item) => {
-        alert(JSON.stringify(item, null, 4))
-
         window.reptileContract.methods
             .mint(species, name, uri, rarity)
             .send({ from: window.account })
@@ -89,7 +87,7 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
     }
 
     return (
-        <StyledCard>
+        <StyledCard {...props}>
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
               <Title>{name}</Title>

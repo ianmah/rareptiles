@@ -6,6 +6,7 @@ import Mint from './components/Mint'
 import './App.css'
 import Collection from './components/Collection'
 import Shelter from './components/Shelter'
+import ViewCard from './components/ViewCard'
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ const Content = styled.div`
 function App() {
   const [contracts, setContracts] = useState({})
   const [activePage, setActivePage] = useState('home')
-  const [viewCard, setViewCard] = useState({})
+  const [viewCard, setViewCard] = useState()
 
   useEffect(() => {
     const getContract = async () => {
@@ -32,6 +33,9 @@ function App() {
 
   return (
     <Container>
+      {
+        viewCard && <ViewCard setViewCard={setViewCard} item={viewCard} />
+      }
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <Content>
         {activePage === 'home' &&
@@ -51,7 +55,7 @@ function App() {
         }
         {activePage === 'shelter' &&
           <>
-            <Shelter contract={contracts.reptile} />
+            <Shelter setViewCard={setViewCard} contract={contracts.reptile} />
           </>
         }
         

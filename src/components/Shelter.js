@@ -40,7 +40,7 @@ function shuffleArray(array) {
 
 shuffleArray(data)
 
-const Shelter = ({}) => {
+const Shelter = ({ setViewCard }) => {
     const [shelter, setShelter] = useState(data)
     const [page, setPageState] = useState(0)
     const [visible, setVisible] = useState(true)
@@ -56,7 +56,7 @@ const Shelter = ({}) => {
             <Title>Shelter</Title>
             <StyledCollection visible={visible} >
             {
-                shelter.slice(page*PER_PAGE, page*PER_PAGE+PER_PAGE).map(item => <Card key={item.id} item={item} isShelter />)
+                shelter.slice(page*PER_PAGE, page*PER_PAGE+PER_PAGE).map(item => <Card onClick={() => setViewCard(item)} key={item.id} item={item} isShelter />)
             }
             </StyledCollection>
             <Button onClick={() => setPage(page-1 >= 0 ? page-1 : 0)}>Back</Button>
