@@ -7,6 +7,7 @@ const StyledSidebar = styled.div`
     height: 100vh;
     background: #fff;
     box-sizing: border-box;
+    border-right: #e3e2e1 2px solid;
 `
 
 const MenuItem = styled.a`
