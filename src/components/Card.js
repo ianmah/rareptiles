@@ -16,6 +16,11 @@ const StyledCard = styled.div`
 const StyledImg = styled.img`
     max-width: 100%;
     border-radius: 10px 10px 0 0;
+<<<<<<< Updated upstream
+=======
+    height: 60%;
+    object-fit: cover;
+>>>>>>> Stashed changes
 `
 const ContentWrapper = styled.div`
     padding: 16px;
@@ -42,7 +47,8 @@ const buyReptile = (tokenId) => {
         })
 }
 
-const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
+const Card = ({ item, isMarket, salePrice, isShelter, ...props }) => {
+    const {species, name, id, uri, rarity} = item
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -59,12 +65,21 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
 
     }
 
+    const adopt = (item) => {
+        window.reptileContract.methods
+            .mint(species, name, uri, rarity)
+            .send({ from: window.account })
+            .once('receipt', receipt => {
+                console.log('mint complete', receipt)
+            })
+    }
+
     const buy = () => {
         buyReptile(id)
     }
 
     return (
-        <StyledCard>
+        <StyledCard {...props}>
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
               <Title>{name}</Title>
