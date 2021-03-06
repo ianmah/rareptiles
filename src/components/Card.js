@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
 import { Title } from './Header'
-import { RARITY } from '../constants'
+import { RARITY, ASSESSMENT_RARITY } from '../constants'
 
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 375px;
+    height: 400px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -34,7 +34,7 @@ const Description = styled.p`
 
 const CTA = styled(Button)`
     position: absolute;
-    bottom: 1em;
+    bottom: 1.3em;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -94,20 +94,20 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
             <ContentWrapper>
               <Title>{name}</Title>
                 <Description>
-                  {`${species} #${id} ${RARITY[rarity]}`}
+                    {RARITY[rarity]} {species} {id && `#${id}`} 
                 </Description>
-                {!isShelter && !isMarket && <Button onClick={sellSomething}>Sell</Button>}
+                {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
                 {sellWindow && <div>
                     Enter the amount you want to sell for:
                     <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                    <Button onClick={confirmSell}>Confirm</Button>
+                    <CTA onClick={confirmSell}>Confirm</CTA>
                     </div>
                 }
                 {
                     isMarket && <>
                     Price: {salePrice}
-                    <Button onClick={buy}>Buy</Button>
+                    <CTA onClick={buy}>Buy</CTA>
                     </>
                 }
             </ContentWrapper>

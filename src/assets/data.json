@@ -2,415 +2,415 @@
   {
     "name": "Pancake Tortoise",
     "species": "Malacochersus tornieri",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/c2fFpxDZ-D7p4HS-DS3.jpg"
   },
   {
     "name": "Ono-i-Lau Ground Skink",
     "species": "Leiolopisma alazon",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1519203861.jpg"
   },
   {
     "name": "Fiji Crested Iguana",
     "species": "Brachylophus vitiensis",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1246530268.jpg"
   },
   {
     "name": "Marbled Gecko",
     "species": "Oedodera marmorata",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/bZp4kCCh-D8hb6M-cDh.jpg"
   },
   {
     "name": "Southern River Terrapin",
     "species": "Batagur affinis",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/462492821.jpg"
   },
   {
     "name": "Ornate Ground Snake",
     "species": "Erythrolamprus ornatus",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/693329763.jpg"
   },
   {
     "name": "Mitchell's Water Monitor",
     "species": "Varanus mitchelli",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/Dd5fsZKZ-D55G1Z-D2g.jpg"
   },
   {
     "name": "Bizarre-nosed Chameleon",
     "species": "Calumma hafahafa",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/958014516.jpg"
   },
   {
     "name": "Mona Rhinoceros Iguana",
     "species": "Cyclura stejnegeri",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1124136690.jpg"
   },
   {
     "name": "Arakan Forest Turtle",
     "species": "Heosemys depressa",
-    "assessment": "Critically Endangered",
+    "rarity": 2,
     "uri": "https://s2r.iucnredlist.org/sis2_images/bR5DzNZw-dblhxZ-pzS.jpg"
   },
   {
     "name": "Christmas Island Chained Gecko",
     "species": "Lepidodactylus listeri",
-    "assessment": "Extinct in the Wild",
+    "rarity": 1,
     "uri": "https://s2r.iucnredlist.org/sis2_images/c6ZKvs8F-D27pCc-DpX.jpg"
   },
   {
     "name": "Christmas Island Blue-tailed Shinning-skink",
     "species": "Cryptoblepharus egeriae",
-    "assessment": "Extinct in the Wild",
+    "rarity": 1,
     "uri": "https://s2r.iucnredlist.org/sis2_images/c4b6dZKr-D27P1s-DpS.jpg"
   },
   {
     "name": "Iberolacerta aurelioi",
     "species": "Iberolacerta aurelioi",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/841597327.jpg"
   },
   {
     "name": "Rough Gecko",
     "species": "Naultinus rudis",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/GMK8Lxbg-D9gXRD-ZJL.jpg"
   },
   {
     "name": "Sakishima Grass Lizard",
     "species": "Takydromus dorsalis",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1264873246.jpg"
   },
   {
     "name": "Bold-striped Gecko",
     "species": "Dierogekko validiclavis",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DTTmWncW-D8hBVd-cC4.jpg"
   },
   {
     "name": "Motagua Spiny-tailed Iguana",
     "species": "Ctenosaura palearis",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/651477545.jpg"
   },
   {
     "name": "Chinese Crocodile Lizard",
     "species": "Shinisaurus crocodilurus",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/266517918.jpg"
   },
   {
     "name": "Black-chested Spiny-tailed Iguana",
     "species": "Ctenosaura melanosterna",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1819875654.jpg"
   },
   {
     "name": "Banded Ground Gecko",
     "species": "Goniurosaurus splendens",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/hDj0j7rL-D23h95-C2s.jpg"
   },
   {
     "name": "Paroedura masobe",
     "species": "Paroedura masobe",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/2069109688.jpg"
   },
   {
     "name": "Ashe's Bush Viper",
     "species": "Atheris desaixi",
-    "assessment": "Endangered",
+    "rarity": 3,
     "uri": "https://s2r.iucnredlist.org/sis2_images/g02qJFsD-db54vC-h7v.jpg"
   },
   {
     "name": "Floreana Giant Tortoise",
     "species": "Chelonoidis niger",
-    "assessment": "Extinct",
+    "rarity": 0,
     "uri": "https://s2r.iucnredlist.org/sis2_images/324954366.jpg"
   },
   {
     "name": "Navassa Rhinoceros Iguana",
     "species": "Cyclura onchiopsis",
-    "assessment": "Extinct",
+    "rarity": 0,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1904496172.jpg"
   },
   {
     "name": "Pinta Giant Tortoise",
     "species": "Chelonoidis abingdonii",
-    "assessment": "Extinct",
+    "rarity": 0,
     "uri": "https://www.lapintagalapagoscruise.com/wp-content/uploads/2018/03/giant-tortoise-galapagos-islands.jpg"
   },
   {
     "name": "Christmas Island Whiptail-skink",
     "species": "Emoia nativitatis",
-    "assessment": "Extinct",
+    "rarity": 0,
     "uri": "https://s2r.iucnredlist.org/sis2_images/D14jJ2fJ-D25Nlf-crw.jpg"
   },
   {
     "name": "Sakishima Green Snake",
     "species": "Ptyas herminae",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/836234266.jpg"
   },
   {
     "name": "Slevin's Sand Gecko",
     "species": "Stenodactylus slevini",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/CwXjrtZf-D57nZ1-FJt.jpg"
   },
   {
     "name": "Red Large-toothed Snake",
     "species": "Lycodon rufozonatus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/607517105.jpg"
   },
   {
     "name": "Keeled Slug-eating Snake",
     "species": "Pareas carinatus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/707724664.jpg"
   },
   {
     "name": "Bowring's Smooth Gecko",
     "species": "Hemidactylus bowringii",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1397899404.jpg"
   },
   {
     "name": "Common Desert Iguana",
     "species": "Dipsosaurus dorsalis",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DLhTNTtx-dBFQpk-GkK.jpg"
   },
   {
     "name": "Pacific Bluetail Skink",
     "species": "Emoia caeruleocauda",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1998771843.jpg"
   },
   {
     "name": "Black Emo Skink",
     "species": "Emoia nigra",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/2075050268.jpg"
   },
   {
     "name": "New Guinea Ground Boa",
     "species": "Candoia aspera",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DV716FSS-ddRNSw-1h.jpg"
   },
   {
     "name": "Oceania Gecko",
     "species": "Gehyra oceanica",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1088176781.jpg"
   },
   {
     "name": "Lacerta strigata",
     "species": "Lacerta strigata",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/30453056.jpg"
   },
   {
     "name": "Puerto Rico Crested Anole",
     "species": "Anolis cristatellus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/2114998604.jpg"
   },
   {
     "name": "Anolis capito",
     "species": "Anolis capito",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1100037465.jpg"
   },
   {
     "name": "Yellow-headed Gecko",
     "species": "Gonatodes albogularis",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1947585657.jpg"
   },
   {
     "name": "Mexican Parrot Snake",
     "species": "Leptophis mexicanus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/176332799.jpg"
   },
   {
     "name": "Thamnophis proximus",
     "species": "Thamnophis proximus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/886386894.jpg"
   },
   {
     "name": "Yellow-spotted Agama",
     "species": "Trapelus flavimaculatus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1669219828.jpg"
   },
   {
     "name": "Oman Saw-scaled Viper",
     "species": "Echis omanensis",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/CzqtfZDV-D5SMzf-D29.jpg"
   },
   {
     "name": "Gallagher's Gecko",
     "species": "Asaccus gallagheri",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DHj2XKfx-D5SlrR-D2M.jpg"
   },
   {
     "name": "Carter's Semaphore Gecko",
     "species": "Pristurus carteri",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DHx89LRn-D5SMCg-D2S.jpg"
   },
   {
     "name": "Arnold's Rock Gecko",
     "species": "Pristurus minimus",
-    "assessment": "Least Concern",
+    "rarity": 5,
     "uri": "https://s2r.iucnredlist.org/sis2_images/Dn4Nx4TH-D5sGQ2-dcW.jpg"
   },
   {
     "name": "Sinaloan Thornscrub Tortoise",
     "species": "Gopherus evgoodei",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/DlsFKPZK-D3wg2P-Ccc.jpg"
   },
   {
     "name": "Volcano Alcedo Giant Tortoise",
     "species": "Chelonoidis vandenburghi",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/CrFKVd1K-D3Wq0H-bZD.jpg"
   },
   {
     "name": "Burmese Python",
     "species": "Python bivittatus",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1662935344.jpg"
   },
   {
     "name": "Acanthodactylus felicis",
     "species": "Acanthodactylus felicis",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1132827689.jpg"
   },
   {
     "name": "Helmethead Gecko",
     "species": "Tarentola chazaliae",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1589221321.jpg"
   },
   {
     "name": "Abronia vasconcelosii",
     "species": "Abronia vasconcelosii",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/127904520.jpg"
   },
   {
     "name": "Marine Iguana",
     "species": "Amblyrhynchus cristatus",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/pPZs8Bd1-dCrPcG-Gh9.jpg"
   },
   {
     "name": "Gekko shibatai",
     "species": "Gekko shibatai",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/921021576.jpg"
   },
   {
     "name": "Japanese Skink",
     "species": "Plestiodon kishinouyei",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/43196965.jpg"
   },
   {
     "name": "Kuroiwa's Ground Gecko",
     "species": "Goniurosaurus kuroiwae",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/2057839977.jpg"
   },
   {
     "name": "Barrington Land Iguana",
     "species": "Conolophus pallidus",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/cx8tKBMd-dCCsjN-MbH.jpg"
   },
   {
     "name": "Galapagos Land Iguana",
     "species": "Conolophus subcristatus",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/C2w12bMd-dcg98d-c9Q.jpg"
   },
   {
     "name": "Mugger",
     "species": "Crocodylus palustris",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/2113018859.jpg"
   },
   {
     "name": "Pinz'n Giant Tortoise",
     "species": "Chelonoidis duncanensis",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1253010296.jpg"
   },
   {
     "name": "Ruby-eyed Green Pitviper",
     "species": "Trimeresurus rubeus",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1622309313.jpg"
   },
   {
     "name": "Olive Ridley",
     "species": "Lepidochelys olivacea",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1736560831.jpg"
   },
   {
     "name": "Impressed Tortoise",
     "species": "Manouria impressa",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/cPG4kF6q-D9rr5X-grD.jpg"
   },
   {
     "name": "African Spurred Tortoise",
     "species": "Centrochelys sulcata",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/bWDPkJtZ-dd2gkH-K3t.jpg"
   },
   {
     "name": "Marmorosphax montana",
     "species": "Marmorosphax montana",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/CBVW87B7-D8sZhN-lJP.jpg"
   },
   {
     "name": "Gracile Dwarf Skink",
     "species": "Nannoscincus gracilis",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/D0Q47Z4n-D8sz9W-lkW.jpg"
   },
   {
     "name": "Earless Dwarf Skink",
     "species": "Nannoscincus mariei",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/pNnwSP0D-D8s2X1-llL.jpg"
   },
   {
     "name": "New Caledonian Leopard Skink",
     "species": "Lacertoides pardalis",
-    "assessment": "Vulnerable",
+    "rarity": 4,
     "uri": "https://s2r.iucnredlist.org/sis2_images/1883390886.jpg"
   }
 ]

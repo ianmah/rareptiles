@@ -18,7 +18,7 @@ const Content = styled.div`
 function App() {
   const [contracts, setContracts] = useState({})
   const [activePage, setActivePage] = useState('home')
-  const [market, setMarket] = useState({})
+  const [viewCard, setViewCard] = useState({})
 
   useEffect(() => {
     const getContract = async () => {
