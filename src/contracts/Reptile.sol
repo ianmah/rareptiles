@@ -16,29 +16,22 @@ contract Reptile is ERC721Full {
     string name;
     string uri;
     bool forSale;
+    uint salePrice;
   }
   
   constructor() ERC721Full("Reptile", "REPTILE") public {}
 
   function mint(string memory _species, string memory _name, string memory _uri) public {
     uint _tokenId = totalSupply();
-    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false});
+    reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false, salePrice: 0});
     reptile_exists[_tokenId] = true;
 
     _mint(msg.sender, _tokenId);
   }
 
-  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri, bool _forSale) {
-    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri, reptiles[_tokenId].forSale);
+  function getTokenProperties(uint256 _tokenId) external view returns (uint256 _id, string memory _species, string memory _name, string memory uri, bool _forSale, uint _salePrice) {
+    return (reptiles[_tokenId].id, reptiles[_tokenId].species, reptiles[_tokenId].name, reptiles[_tokenId].uri, reptiles[_tokenId].forSale, reptiles[_tokenId].salePrice);
   }
-
-  // function getForSale() public view returns (uint[] memory _forSale) {
-  //   uint[] memory ret = new uint[](reptilesOnSaleCount);
-  //   for (uint i = 0; i < reptilesOnSaleCount; i++) {
-  //       ret[i] = reptilesOnSale[i];
-  //   }
-  //   return ret;
-  // }
 
   function setForSale(uint256 _tokenId, uint _salePrice) external {
       address owner = ownerOf(_tokenId);
@@ -49,6 +42,7 @@ contract Reptile is ERC721Full {
       reptilesSalePrice[_tokenId] = _salePrice;
 
       reptiles[_tokenId].forSale = true;
+      reptiles[_tokenId].salePrice = _salePrice;
 
       emit Approval(owner, address(this), _tokenId);
   }

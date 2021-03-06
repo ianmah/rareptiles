@@ -26,7 +26,7 @@ const listReptile = (tokenId, salePrice) => {
 }
 
 
-const Card = ({ species, name, id, uri, isMarket, forSale }) => {
+const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
     const [sellAmount, setSellAmount] = useState('')
     const [sellWindow, setSellWindow] = useState(false)
 
@@ -55,7 +55,7 @@ const Card = ({ species, name, id, uri, isMarket, forSale }) => {
                 </div>
             }
             {
-                isMarket && "For Sale"
+                isMarket && `Price: ${salePrice}`
             }
         </StyledCard>
     )
