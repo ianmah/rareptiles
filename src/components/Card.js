@@ -12,6 +12,7 @@ const StyledCard = styled.div`
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
+    position: relative;
 `
 
 const StyledImg = styled.img`
@@ -25,6 +26,15 @@ const ContentWrapper = styled.div`
     p {
       color: #555;
     }
+`
+
+const Description = styled.p`
+    margin: 0.3em 0;
+`
+
+const CTA = styled(Button)`
+    position: absolute;
+    bottom: 1em;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -65,7 +75,7 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
 
     const adopt = (item) => {
         alert(JSON.stringify(item, null, 4))
-        
+
         window.reptileContract.methods
             .mint(species, name, uri, rarity)
             .send({ from: window.account })
@@ -83,11 +93,11 @@ const Card = ({ item, isMarket, salePrice, isShelter }) => {
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
               <Title>{name}</Title>
-                <p>
+                <Description>
                   {`${species} #${id} ${RARITY[rarity]}`}
-                </p>
+                </Description>
                 {!isShelter && !isMarket && <Button onClick={sellSomething}>Sell</Button>}
-                {isShelter && <Button onClick={() => adopt(item)}>Adopt</Button>}
+                {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
                 {sellWindow && <div>
                     Enter the amount you want to sell for:
                     <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
