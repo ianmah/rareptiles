@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 50px;
   height: 2.5em;
-  min-width: calc(20% - 20px);
+  min-width: 8em;
   font-weight: bold;
   margin-right: 1em;
   flex-basis: calc(50% - 20px);

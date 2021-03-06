@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Button from './Button'
 import { Title } from './Header'
 
 const StyledCard = styled.div`
@@ -75,13 +76,13 @@ const Card = ({ species, name, id, uri, isMarket, salePrice }) => {
             {sellWindow && <div>
                 Enter the amount you want to sell for:
                 <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                <button onClick={confirmSell}>Confirm</button>
+                <Button onClick={confirmSell}>Confirm</Button>
                 </div>
             }
             {
                 isMarket && <>
                 Price: {salePrice}
-                <button onClick={buy}>Buy</button>
+                <Button onClick={buy}>Buy</Button>
                 </>
             }
         </StyledCard>

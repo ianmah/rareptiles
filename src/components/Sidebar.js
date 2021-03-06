@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledSidebar = styled.div`
-    width: 220px;
+    width: 300px;
     float: left;
     height: 100vh;
     background: #fff;
@@ -19,7 +19,9 @@ const MenuItem = styled.a`
     transition: all 200ms ease;
     &:hover {
         background: #eee;
+        cursor: pointer;
     }
+    font-weight: bold;
 `
 
 const Sidebar = ({ setActivePage }) => {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Card from './Card'
 import { Title } from './Header'
+import Search from './SearchBar'
 
 const CollectionContainer = styled.div`
     box-sizing: border-box;
@@ -50,6 +51,7 @@ const Collection = ({ contract, isMarket }) => {
 
     return (
         <CollectionContainer>
+            <Search></Search>
             <Title>Collection</Title>
             <StyledCollection>
             {
