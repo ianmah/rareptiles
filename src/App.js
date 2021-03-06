@@ -30,7 +30,6 @@ function App() {
     <Container>
       <Sidebar/>
       <Content>
-        Welcome to Rareptiles
         <Mint contract={contracts.reptile} />
         <Collection contract={contracts.reptile} />
       </Content>

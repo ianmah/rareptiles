@@ -26,6 +26,7 @@ const Collection = ({ contract }) => {
                     id,
                     species: item[1],
                     name: item[2],
+                    uri: item[3],
                   }
                 }
             }

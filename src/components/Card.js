@@ -6,16 +6,21 @@ const StyledCard = styled.div`
     width: 300px;
     height: 400px;
     margin: 0 20px 20px 0;
-    padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
 `
 
-const Card = ({ species, name, id }) => {
+const StyledImg = styled.img`
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+`
+
+const Card = ({ species, name, id, uri }) => {
     return (
         <StyledCard>
-            Card {id} {name}
+            <StyledImg src={uri} alt={name} />
+            {id} {name}
         </StyledCard>
     )
 }
