@@ -1,8 +1,8 @@
 module.exports = {
     networks: {
       development: {
-        host: "http://2719ac0aba99.ngrok.io",
-        port: 80,
+        host: "127.0.0.1",
+        port: 7545,
         network_id: "*" // Match any network id
       },
     },
