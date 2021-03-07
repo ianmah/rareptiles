@@ -21,8 +21,8 @@ const Container = styled.div`
 
 const Content = styled.div`
     margin: auto;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
 `
 
 const StyledImg = styled.img`
@@ -136,8 +136,9 @@ const StyledButton = styled(Button)`
 `
 
 const StyledCard = styled.div`
+    padding: 0 1em;
     background: #fff;
-    width: 570px;
+    width: 600px;
     min-height: 730px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -147,27 +148,28 @@ const StyledCard = styled.div`
     position: relative;
     padding-bottom: 2em;
 `
+
 const Name = styled.h2`
     font-family: 'Shapiro';
     font-size: 26px;
     text-transform: uppercase;
     margin: 0;
     margin-top: -20px;
-    padding: 0 15px;
+    margin-bottom: 10px;
 `
 
 const ConservativeActions = styled.p`
-    width: 570px;
     box-sizing: border-box;
-    margin-top: -10px;
-    padding: 0 30px 10px 30px;
+    margin-top: -16px;
 `
 
 const ConservativeActionsTitle = styled.h4`
-    width: 570px;
     box-sizing: border-box;
-    padding: 0 4px;
     font-size: 16px;
+`
+const CardData = styled.div`
+    text-align: left;
+    padding: 0 2em;
 `
 
 const Serial = styled.div`
@@ -236,47 +238,49 @@ const ViewCard = ({ setViewCard, item }) => {
                         {item.id && `#${item.id}`} 
                     </Serial>
                     <br/>
-                    <Name>{item.name}</Name>
-                    {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
-                    <br/>
-                    Population Trend: {cardData[item.species].populationTrend}
-                    <br/>
-                    Systems: {cardData[item.species].systems}
-                    <br/>
-                    Realm: {cardData[item.species].realm}
-                    {
-                        cardData[item.species].conservativeActions !== "" && 
-                        <> 
-                            <ConservativeActionsTitle>Conservative Actions</ConservativeActionsTitle>
-                            <ConservativeActions>{cardData[item.species].conservativeActions}</ConservativeActions>
-                        </>
-                    }
-                    {
-                        !item.id && item.id !== 0 && <Button onClick={adopt}>Adopt</Button>
-                    }
-                    {
-                        
-                        item.forSale && <>
-                            <Price>{item.salePrice}</Price>
-                            <br/>
-                            <Button onClick={adopt}>Buy</Button>
-                        </>
-                    }
-                    {
-                        cardData[item.species].arPicName &&
-                        <QrImg src={qrImageMap[cardData[item.species].arPicName]} alt={item.name + " QR code"} />
+                    <CardData>
+                        <Name>{item.name}</Name>
+                        <strong>{RARITY[item.rarity]}:</strong> {RARITY_FULL[item.rarity]}
+                        <br/>
+                        <strong>Population Trend:</strong> {cardData[item.species].populationTrend}
+                        <br/>
+                        <strong>Systems:</strong> {cardData[item.species].systems}
+                        <br/>
+                        <strong>Realm:</strong> {cardData[item.species].realm}
+                        {
+                            cardData[item.species].conservativeActions !== "" && 
+                            <> 
+                                <ConservativeActionsTitle>Conservative Actions</ConservativeActionsTitle>
+                                <ConservativeActions>{cardData[item.species].conservativeActions}</ConservativeActions>
+                            </>
+                        }
+                        {
+                            !item.id && item.id !== 0 && <Button onClick={adopt}>Adopt</Button>
+                        }
+                        {
+                            
+                            item.forSale && <>
+                                <Price>{item.salePrice}</Price>
+                                <br/>
+                                <Button onClick={adopt}>Buy</Button>
+                            </>
+                        }
+                        {
+                            cardData[item.species].arPicName &&
+                            <QrImg src={qrImageMap[cardData[item.species].arPicName]} alt={item.name + " QR code"} />
 
-                    }
-                    {
-                        item.wanttosell && <div>
-                        Sell price:
-                        <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                        <br/>
-                        <br/>
-                        <Button onClick={confirmSell}>Confirm</Button>
-                        </div>
-                        
-                    }
+                        }
+                        {
+                            item.wanttosell && <div>
+                            Sell price:
+                            <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                            <br/>
+                            <br/>
+                            <Button onClick={confirmSell}>Confirm</Button>
+                            </div>
+                            
+                        }
+                    </CardData>
                 </StyledCard>
             </Content>
         </Container>
