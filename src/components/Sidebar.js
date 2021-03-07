@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import logo from '../assets/reptile.png';
 import {Price} from './Header'
+import Cards from '../icons/cards'
+import Tent from '../assets/tent.png'
+import Shop from '../assets/shop.svg'
 
 const StyledSidebar = styled.div`
     width: 250px;
@@ -18,6 +21,8 @@ const MenuItem = styled.a`
     box-sizing: border-box;
     display: block;
     transition: all 200ms ease;
+    display: flex;
+    align-items: center;
     &:hover {
         background: #fadede;
         cursor: pointer;
@@ -53,6 +58,24 @@ const Legend = styled.ul`
     }
 `
 
+const StyledCards = styled(Cards)`
+    margin-right: 8px;
+    margin-top: -2px;
+`
+
+const StyledShop = styled.img`
+    margin-right: 8px;
+    margin-left: -7px;
+    width: 20px;
+`
+
+const StyledHome = styled.img`
+    width: 21px;
+    margin-right: 6px;
+    margin-left: -3px;
+    margin-top: -2px;
+`
+
 const Sidebar = ({ donations, activePage, setActivePage }) => {
 
     return (
@@ -61,9 +84,18 @@ const Sidebar = ({ donations, activePage, setActivePage }) => {
                 <Logo src={logo} alt="logo" />
                 <SidebarHeader>Rareptiles</SidebarHeader>
             </Header>
-            <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
-            <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
-            <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>
+            <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>
+                <StyledShop src={Shop} />
+                Marketplace
+            </MenuItem>
+            <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>
+                <StyledCards active={activePage === 'collection'} />
+                Collection
+            </MenuItem>
+            <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>
+                <StyledHome src={Tent} />
+                Shelter
+            </MenuItem>
             <Legend>
                 Total Donations:
                 <Price>{donations}</Price>
