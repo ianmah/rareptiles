@@ -26,7 +26,11 @@ contract Reptile is ERC721Full {
   
   constructor() ERC721Full("Reptile", "REPTILE") public {}
 
-  function mint(string memory _species, string memory _name, string memory _uri, uint _rarityRating) public {
+  function mint(string memory _species, string memory _name, string memory _uri, uint _rarityRating) public payable {
+    require(msg.value >= 1, "Cost to mint is 1");
+
+    donations += msg.value;
+    
     uint _tokenId = totalSupply();
     Rarity _rarity = Rarity(_rarityRating);
     reptiles[_tokenId] = ReptileStruc({id: _tokenId, species: _species, name: _name, uri: _uri, forSale: false, salePrice: 0, rarity: _rarity});

@@ -3,11 +3,10 @@ import styled from 'styled-components'
 import Button from './Button'
 import { Title, Price } from './Header'
 import { RARITY, ASSESSMENT_RARITY } from '../constants'
-/* global BigInt */
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 410px;
+    height: 400px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -49,9 +48,20 @@ const Description = styled.p`
     margin: 0.3em 0;
 `
 
+const Mini = styled.p`
+    margin: 0.3em 0;
+    font-size: 0.6em;
+`
+
 const CTA = styled(Button)`
     position: absolute;
     bottom: 1.4em;
+    right: 1.4em;
+`
+
+const PriceBox = styled.div`
+    position: absolute;
+    bottom: 1.1em;
 `
 
 const Label = styled.div`
@@ -65,13 +75,12 @@ const Label = styled.div`
 `
 
 const Serial = styled.div`
-    font-size: 10px;
+    font-size: 12px;
     position: absolute;
-    bottom: 1.2em;
+    top: 1.2em;
     right: 1.2em;
-    color: #ccc;
+    color: #fff;
 `
-
 const listReptile = (tokenId, salePrice) => {
     window.reptileContract.methods
         .setForSale(tokenId, salePrice)
@@ -95,10 +104,12 @@ const buyReptile = (tokenId, salePrice) => {
 const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ...props }) => {
     const {species, name, id, uri, rarity} = item
 
-    const adopt = (item) => {
+    const adopt = (amt) => {
+        const amountToPay = window.web3.utils.toWei(amt.toString(), 'ether')
+
         window.reptileContract.methods
             .mint(species, name, uri, rarity)
-            .send({ from: window.account })
+            .send({ from: window.account, to: window.reptileContract.address, value: amountToPay })
             .once('receipt', receipt => {
                 console.log('mint complete', receipt)
                 setViewCard(false)
@@ -123,13 +134,24 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
                     {id && `#${id}`} 
                 </Serial>
                 {!isShelter && !isMarket && !item.forSale && <CTA>Sell</CTA>}
-                {item.forSale && !isMarket && <Price>{item.salePrice}</Price>}
-                {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
+                {item.forSale && !isMarket && 
+                    <PriceBox>
+                        <Price>{item.salePrice}</Price>
+                        <Mini>For Sale</Mini>
+                    </PriceBox>}
+                {isShelter && <>
+                <PriceBox>
+                    <Price>{6 - item.rarity}</Price>
+                    <Mini>Minimum Donation</Mini>
+                </PriceBox>
+                <CTA onClick={() => adopt(6 - item.rarity)}>Adopt</CTA>
+                </>}
                 
                 {
                     isMarket && <>
-                    <Price>{item.salePrice}</Price>
-                    <br/>
+                    <PriceBox>
+                        <Price>{item.salePrice}</Price>
+                    </PriceBox>
                     <CTA onClick={buy}>Buy</CTA>
                     </>
                 }

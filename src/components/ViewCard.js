@@ -96,7 +96,6 @@ const ViewCard = ({ setViewCard, item }) => {
     const confirmSell = () => {
         const numSell = parseInt(sellAmount)
         if (numSell) {
-            console.log('yee')
             listReptile(item.id, numSell) // Change later
         }
 
