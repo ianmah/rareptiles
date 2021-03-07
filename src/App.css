@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Shapiro';
+  src: local('Shapiro'), url('./assets/Shapiro.woff2') format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+
 h1 {
   margin: 20px;
 }
@@ -8,17 +15,37 @@ body {
 
 html, body {
   height: 100%;
+  font-family: 'Fira Mono', monospace;
+  font-size: 14px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes spin {
+  0%{
+     transform: rotateX(-6deg) rotateY(-20deg);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+      transform: rotateX(-6deg) rotateY(20deg);
+  }
+  100%{
+     transform: rotateX(-6deg) rotateY(-20deg);
+  }
+}
+
+@keyframes spin2 {
+  0%{
+     transform: rotateX(0) rotateY(0);
+  }
+  25%{
+      transform: rotateX(-6deg) rotateY(-20deg);
+  }
+  50%{
+      transform: rotateX(-6deg) rotateY(20deg);
+  }
+  100%{
+    transform: rotateX(0) rotateY(0);
   }
 }

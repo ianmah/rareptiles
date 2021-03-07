@@ -16,6 +16,7 @@ const StyledCard = styled.div`
     transition: all 200ms ease;
     &:hover {
         box-shadow: 0 0 0 3px #f5971d;
+        animation: spin2 4s ease infinite;
     }
 `
 
@@ -38,7 +39,17 @@ const Description = styled.p`
 
 const CTA = styled(Button)`
     position: absolute;
-    bottom: 1.3em;
+    bottom: 1.4em;
+`
+
+const Label = styled.div`
+    font-family: 'Shapiro';
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 6px red;
+    top: 0.75em;
+    left: 1em;
+    font-size: 16px;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -93,11 +104,12 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
 
     return (
         <StyledCard {...props}>
+            <Label>{RARITY[rarity]}</Label>
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
               <Title>{name}</Title>
                 <Description>
-                    {RARITY[rarity]} {species} {id && `#${id}`} 
+                    {species} {id && `#${id}`} 
                 </Description>
                 {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
@@ -109,7 +121,8 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
                 }
                 {
                     isMarket && <>
-                    Price: {salePrice}
+                    Price: {item.salePrice}
+                    <br/>
                     <CTA onClick={buy}>Buy</CTA>
                     </>
                 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import { Title } from './Header'
+import { Title, Header } from './Header'
 import Search from './SearchBar'
 import Card from './Card'
 import data from '../assets/data.json'
@@ -53,7 +53,7 @@ const Shelter = ({ setViewCard }) => {
 
     return (
         <CollectionContainer>
-            <Title>Shelter</Title>
+            <Header>Shelter</Header>
             <StyledCollection visible={visible} >
             {
                 shelter.slice(page*PER_PAGE, page*PER_PAGE+PER_PAGE).map(item => <Card onClick={() => setViewCard(item)} key={item.id} item={item} isShelter />)

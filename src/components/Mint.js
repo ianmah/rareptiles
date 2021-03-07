@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import { Title } from './Header'
+import { Header } from './Header'
 
 const MintContainer = styled.div`
     box-sizing: border-box;
@@ -9,9 +9,9 @@ const MintContainer = styled.div`
 `
 
 const Mint = ({ contract }) => {
-    const mintReptile = (species, name, uri, rarity) => {
+    const mintReptile = (species, name, uri) => {
         window.reptileContract.methods
-            .mint(species, name, uri, rarity)
+            .mint(species, name, uri)
             .send({ from: window.account })
             .once('receipt', receipt => {
                 console.log('mint complete', receipt)
@@ -19,12 +19,12 @@ const Mint = ({ contract }) => {
     }
 
     const manualMint = () => {
-        mintReptile('ligma logma', 'Liger', 'http://crownridgetigers.com/wp-content/uploads/2013/12/liger.jpg', 3)
+        mintReptile('ligma logma', 'Liger', 'http://crownridgetigers.com/wp-content/uploads/2013/12/liger.jpg')
     }
 
     return (
         <MintContainer>
-            <Title>Mint</Title>
+            <Header>Mint</Header>
             <Button onClick={manualMint}>Mint</Button>
         </MintContainer>
     )

@@ -16,28 +16,33 @@ const Container = styled.div`
 const Content = styled.div`
     margin: auto;
     text-align: center;
+    overflow: hidden;
 `
 
 const StyledImg = styled.img`
-    width: 550px;
-    height: 500px;
+    animation: spin 4s ease infinite;
+    width: 400px;
+    height: 450px;
+    margin: 2em;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 15px #e3e2e1;
+    border-radius: 10px;
 `
 
 const StyledButton = styled(Button)`
     float: right;
+    margin: 0.5em;
 `
 
 const StyledCard = styled.div`
     background: #fff;
     width: 550px;
-    height: 640px;
-    margin: 0 20px 20px 0;
+    height: 700px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
-    margin: 2em auto;
+    margin: 5em auto;
+    overflow: hidden;
 `
 
 const ViewCard = ({ setViewCard, item }) => {
@@ -54,13 +59,13 @@ const ViewCard = ({ setViewCard, item }) => {
 
     return (
         <Container>
-            <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
             <Content>
                 <StyledCard>
+                    <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
                     <StyledImg src={item.uri} alt={item.name} />
                     <br/>
                     <Title>{item.name}</Title>
-                    {RARITY_FULL[item.rarity]}
+                    {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
                     <br/>
                     <br/>
                     <Button onClick={adopt}>Adopt</Button>
