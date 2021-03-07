@@ -26,8 +26,9 @@ const StyledImg = styled.img`
     height: 60%;
     object-fit: cover;
 `
+
 const ContentWrapper = styled.div`
-    padding: 16px;
+    padding: 10px 16px 16px 16px;
     p {
       color: #555;
     }
@@ -50,6 +51,14 @@ const Label = styled.div`
     top: 0.75em;
     left: 1em;
     font-size: 16px;
+`
+
+const Serial = styled.div`
+    font-size: 10px;
+    position: absolute;
+    bottom: 1.2em;
+    right: 1.2em;
+    color: #ccc;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -107,15 +116,19 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
             <Label>{RARITY[rarity]}</Label>
             <StyledImg src={uri} alt={name} />
             <ContentWrapper>
-              <Title>{name}</Title>
+                <Title>{name}</Title>
                 <Description>
-                    {species} {id && `#${id}`} 
+                    {species}
                 </Description>
+                <Serial>
+                    {id && `#${id}`} 
+                </Serial>
                 {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
                 {sellWindow && <div>
                     Enter the amount you want to sell for:
                     <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                    <br/>
                     <CTA onClick={confirmSell}>Confirm</CTA>
                     </div>
                 }

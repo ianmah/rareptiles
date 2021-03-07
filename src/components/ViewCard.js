@@ -27,6 +27,33 @@ const StyledImg = styled.img`
     object-fit: cover;
     box-shadow: 2px 2px 15px #e3e2e1;
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 300;
+`
+
+const Shine = styled.div`
+    width: 600px;
+    height: 500px;
+    margin-top: -500px;
+    z-index: 600;
+    animation: shiny 4s linear infinite;
+    transform: translateY(0);
+    background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
+    background-repeat: no-repeat;
+
+    @keyframes shiny {
+      0%{
+        background-position: -800px 0;
+      }
+      30%{
+        opacity: 0;
+        background-position: 1800px 0; 
+      }    
+      100%{
+        opacity: 0;
+        background-position: 1800px 0; 
+      }  
+    }
 `
 
 const StyledButton = styled(Button)`
@@ -37,12 +64,19 @@ const StyledButton = styled(Button)`
 const StyledCard = styled.div`
     background: #fff;
     width: 550px;
-    height: 700px;
+    height: 720px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
     margin: 5em auto;
     overflow: hidden;
+`
+const Name = styled.h2`
+    font-family: 'Shapiro';
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 10px;
 `
 
 const ViewCard = ({ setViewCard, item }) => {
@@ -63,8 +97,9 @@ const ViewCard = ({ setViewCard, item }) => {
                 <StyledCard>
                     <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
                     <StyledImg src={item.uri} alt={item.name} />
+                    <Shine/>
                     <br/>
-                    <Title>{item.name}</Title>
+                    <Name>{item.name}</Name>
                     {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
                     <br/>
                     <br/>

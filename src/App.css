@@ -40,12 +40,13 @@ html, body {
      transform: rotateX(0) rotateY(0);
   }
   25%{
-      transform: rotateX(-6deg) rotateY(-20deg);
+      transform: rotateX(-4deg) rotateY(-15deg);
   }
   50%{
-      transform: rotateX(-6deg) rotateY(20deg);
+      transform: rotateX(-4deg) rotateY(15deg);
   }
   100%{
     transform: rotateX(0) rotateY(0);
   }
+
 }

@@ -29,7 +29,6 @@ const Sidebar = ({ activePage, setActivePage }) => {
     return (
         <StyledSidebar>
             <h1>Rareptiles</h1>
-            <MenuItem active={activePage === 'home'} onClick={() => setActivePage('home')}>Home</MenuItem>
             <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
             <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
             <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>
