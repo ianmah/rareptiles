@@ -29,13 +29,14 @@ const Collection = ({ contract, isMarket, setViewCard }) => {
                 const owner = await contract.methods.ownerOf(i - 1).call()
                 if ((owner === window.account  && !isMarket) || (isMarket && item.forSale)) {
                     const id = item[0].toNumber()
+                    const salePrice = window.web3.utils.fromWei(item.salePrice.toString(), 'ether')
                     wallet[id] = {
                         id,
                         species: item.species,
                         name: item.name,
                         uri: item.uri,
                         forSale: item.forSale,
-                        salePrice: item.salePrice.toNumber(),
+                        salePrice,
                         rarity: item.rarity,
                     }
                 }

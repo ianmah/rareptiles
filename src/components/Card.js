@@ -141,10 +141,10 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
                     </PriceBox>}
                 {isShelter && <>
                 <PriceBox>
-                    <Price>{6 - item.rarity}</Price>
+                    <Price>{(6 - item.rarity)/2}</Price>
                     <Mini>Minimum Donation</Mini>
                 </PriceBox>
-                <CTA onClick={() => adopt(6 - item.rarity)}>Adopt</CTA>
+                <CTA onClick={() => adopt((6 - item.rarity)/2)}>Adopt</CTA>
                 </>}
                 
                 {

@@ -56,7 +56,7 @@ const Shelter = ({ setViewCard }) => {
             <Header>Shelter</Header>
             <StyledCollection visible={visible} >
             {
-                shelter.slice(page*PER_PAGE, page*PER_PAGE+PER_PAGE).map(item => <Card onClick={() => setViewCard(item)} key={item.id} item={item} isShelter />)
+                shelter.slice(page*PER_PAGE, page*PER_PAGE+PER_PAGE).map(item => <Card  key={item.name} onClick={() => setViewCard(item)}item={item} isShelter />)
             }
             </StyledCollection>
             <Button onClick={() => setPage(page-1 >= 0 ? page-1 : 0)}>Back</Button>

@@ -89,9 +89,10 @@ const ViewCard = ({ setViewCard, item }) => {
     const [sellAmount, setSellAmount] = useState('')
 
     const confirmSell = () => {
-        const numSell = parseInt(sellAmount)
+        const numSell = parseFloat(sellAmount)
         if (numSell) {
-            listReptile(item.id, numSell) // Change later
+            const amountSell = window.web3.utils.toWei(numSell.toString(), "ether")
+            listReptile(item.id, amountSell)
         }
 
     }
@@ -122,7 +123,7 @@ const ViewCard = ({ setViewCard, item }) => {
                     <br/>
                     <br/>
                     {
-                        !item.id && <Button onClick={adopt}>Adopt</Button>
+                        !item.id && item.id !== 0 && <Button onClick={adopt}>Adopt</Button>
                     }
                     {
                         
@@ -134,7 +135,7 @@ const ViewCard = ({ setViewCard, item }) => {
                     }
                     {
                         item.wanttosell && <div>
-                        Enter the amount you want to sell for:
+                        Sell price:
                         <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
                         <br/>
                         <Button onClick={confirmSell}>Confirm</Button>
