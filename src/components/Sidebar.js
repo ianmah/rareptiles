@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import logo from '../assets/reptile.png';
+import {Price} from './Header'
 
 const StyledSidebar = styled.div`
     width: 250px;
@@ -52,7 +53,7 @@ const Legend = styled.ul`
     }
 `
 
-const Sidebar = ({ activePage, setActivePage }) => {
+const Sidebar = ({ donations, activePage, setActivePage }) => {
 
     return (
         <StyledSidebar>
@@ -64,6 +65,10 @@ const Sidebar = ({ activePage, setActivePage }) => {
             <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
             <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>
             <Legend>
+                Total Donations:
+                <Price>{donations}</Price>
+                <br/>
+                <br/>
                 <li>MEX: Extinct</li>
                 <li>EX: Extinct in the Wild</li>
                 <li>CR: Critically Endangered</li>

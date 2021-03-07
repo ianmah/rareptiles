@@ -20,6 +20,7 @@ function App() {
   const [contracts, setContracts] = useState({})
   const [activePage, setActivePage] = useState('collection')
   const [viewCard, setViewCard] = useState()
+  const [donations, setDonations] = useState(0)
 
   useEffect(() => {
     const getContract = async () => {
@@ -30,13 +31,25 @@ function App() {
     loadWeb3()
     getContract()
   }, [])
+    
+  useEffect(() => {
+    if (!contracts.reptile) return;
+    const contract = contracts.reptile
+    const getDonations = async () => {
+      const dono = window.web3.utils.fromWei((await contract.methods.donations().call()).toString(), 'ether')
+      setDonations(dono);
+    }
+
+    getDonations()
+  }, [contracts])
+
 
   return (
     <Container>
       {
         viewCard && <ViewCard setViewCard={setViewCard} item={viewCard} />
       }
-      <Sidebar activePage={activePage} setActivePage={setActivePage} />
+      <Sidebar activePage={activePage} donations={donations} setActivePage={setActivePage} />
       <Content>
         {activePage === 'home' &&
           <>

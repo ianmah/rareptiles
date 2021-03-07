@@ -27,7 +27,7 @@ contract Reptile is ERC721Full {
   constructor() ERC721Full("Reptile", "REPTILE") public {}
 
   function mint(string memory _species, string memory _name, string memory _uri, uint _rarityRating) public payable {
-    require(msg.value >= 1, "Cost to mint is 1");
+    require(6 - _rarityRating - msg.value >= 0, "You must pay minimum donation fee");
 
     donations += msg.value;
     
