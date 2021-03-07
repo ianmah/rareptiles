@@ -56,6 +56,7 @@ const StyledCard = styled.div`
     box-shadow: 2px 2px 15px #e3e2e1;
     margin: 5em auto;
     overflow: hidden;
+    position: relative;
 `
 const Name = styled.h2`
     font-family: 'Shapiro';
@@ -63,6 +64,14 @@ const Name = styled.h2`
     text-transform: uppercase;
     margin: 0;
     padding: 0 10px;
+`
+
+const Serial = styled.div`
+    font-size: 10px;
+    position: absolute;
+    bottom: 1.2em;
+    right: 1.2em;
+    color: #ccc;
 `
 
 const ViewCard = ({ setViewCard, item }) => {
@@ -81,6 +90,9 @@ const ViewCard = ({ setViewCard, item }) => {
         <Container>
             <Content>
                 <StyledCard>
+                    <Serial>
+                        {item.id && `#${item.id}`} 
+                    </Serial>
                     <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
                     <StyledImg src={item.uri} alt={item.name} />
                     <Shine/>
@@ -89,7 +101,12 @@ const ViewCard = ({ setViewCard, item }) => {
                     {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
                     <br/>
                     <br/>
-                    <Button onClick={adopt}>Adopt</Button>
+                    {
+                        !item.id && <Button onClick={adopt}>Adopt</Button>
+                    }
+                    {
+                        item.forSale && <Button onClick={adopt}>Buy</Button>
+                    }
                 </StyledCard>
             </Content>
         </Container>
