@@ -1,692 +1,696 @@
-[
-    {
-      "species":"Chelonoidis niger",
+{
+    "Chelonoidis niger":{
       "name":"Floreana Giant Tortoise",
       "rarity":"0",
       "populationTrend":"Unknown",
-      "useTrade":"<p>This species was exposed to intense exploitation by whalers and other seamen in the 1700s and early 1800s, collecting animals as provisions, with the last large loads of tortoises from Floreana recorded as occurring between 1831 and 1837 (Townsend 1925,&#160;<a>Pritchard 1996).</a><span class=\"MsoCommentReference\"></p>",
+      "useTrade":"This species was exposed to intense exploitation by whalers and other seamen in the 1700s and early 1800s, collecting animals as provisions, with the last large loads of tortoises from Floreana recorded as occurring between 1831 and 1837 (Townsend 1925,Pritchard 1996).",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>                 </p><p>Legislation and regulations:&#160;<em>Chelonoidis niger</em>&#160;is protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade.&#160;Most of Floreana (98%), and thus the historic range of&#160;<em>niger</em>, is protected as part of the Galápagos National Park.<br/><br/>Tortoise population restoration on Floreana is currently planned via release of offspring from selectively chosen tortoises with partial Floreana ancestry derived from those identified on Wolf Volcano on Isabela and those in captivity; this complex restoration project was begun in 2015 and will require at least a decade or more for full implementation. A cat and rodent eradication campaign is currently being developed for deployment in the next few years.</p>  <p></p>",
-      "realm":"Neotropical"
+      "conservativeActions":"Legislation and regulations: Chelonoidis nigeris protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade.Most of Floreana (98%), and thus the historic range ofniger, is protected as part of the Galápagos National Park.Tortoise population restoration on Floreana is currently planned via release of offspring from selectively chosen tortoises with partial Floreana ancestry derived from those identified on Wolf Volcano on Isabela and those in captivity; this complex restoration project was begun in 2015 and will require at least a decade or more for full implementation. A cat and rodent eradication campaign is currently being developed for deployment in the next few years.",
+      "realm":"Neotropical",
+      "arCode":"https://console.echoar.xyz/query?key=shy-voice-0702&file=511c2e70-73b7-426b-8462-4c70a2865643",
+      "arPicName":"floreanaGiantTortoiseQR"
     },
-    {
-      "species":"Cyclura onchiopsis",
+    "Cyclura onchiopsis":{
       "name":"Navassa Rhinoceros Iguana",
       "rarity":"0",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Chelonoidis abingdonii",
+    "Chelonoidis abingdonii":{
       "name":"Pinta Giant Tortoise",
       "rarity":"0",
       "populationTrend":"Unknown",
-      "useTrade":"<em>Chelonoidis abingdonii</em> was historically exploited in the 19th century&#160;by whalers and other mariners as on-board food supplies.",
+      "useTrade":"Chelonoidis abingdonii was historically exploited in the 19th centuryby whalers and other mariners as on-board food supplies.",
       "systems":"Terrestrial",
-      "conservativeActions":"Legislation and regulations: <em>Chelonoidis abingdonii</em>&#160;is protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. The entirety of Pinta Island, and therefore <a>100%&#160;of </a>this species’&#160;native range, is protected as part of the Galapagos National Park.<br/><br/>Captive breeding attempts with Lonesome George, the last known individual of&#160;<em>C.&#160;abingdonii</em>, were undertaken&#160;off and on during&#160;the 40 years of his residence at the Government of Ecuador’s Tortoise Centre on Santa Cruz, but he never reproduced.&#160;Goats were eradicated from Pinta in 1999 (Campbell <em>et al</em>. 2004).&#160;Ecosystem restoration on Pinta needs to continue to secure its other biodiversity.&#160;For that reason in May 2010, thirty-nine sterilized adult tortoises of various hybrid origins were released on to Pinta to act as non-reproductive natural ecosystem engineers to initiate a more natural habitat restoration process (Hunter <em>et al</em>. 2013). An ongoing project to remove hybrid tortoises with partial Pinta ancestry from Volcán Wolf on Isabela to begin a captive breeding programme is underway. Their reproductive offspring will be released on to Pinta, followed by long-term monitoring of the population.",
-      "realm":"Neotropical"
+      "conservativeActions":"Chelonoidis abingdonii is protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. The entirety of Pinta Island, and therefore 100% of this species’ native range, is protected as part of the Galapagos National Park.Captive breeding attempts with Lonesome George, the last known individual of C. abingdonii, were undertaken off and on during the 40 years of his residence at the Government of Ecuador’s Tortoise Centre on Santa Cruz, but he never reproduced. Goats were eradicated from Pinta in 1999 (Campbell et al. 2004). Ecosystem restoration on Pinta needs to continue to secure its other biodiversity. For that reason in May 2010, thirty-nine sterilized adult tortoises of various hybrid origins were released on to Pinta to act as non-reproductive natural ecosystem engineers to initiate a more natural habitat restoration process (Hunter et al. 2013). An ongoing project to remove hybrid tortoises with partial Pinta ancestry from Volcán Wolf on Isabela to begin a captive breeding programme is underway. Their reproductive offspring will be released on to Pinta, followed by long-term monitoring of the population.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Emoia nativitatis",
+    "Emoia nativitatis":{
       "name":"Christmas Island Whiptail-skink",
       "rarity":"0",
       "populationTrend":"Unknown",
       "useTrade":"There is no use or trade of this species.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is considered Critically Endangered by the Australian government in the Environment Protection and Biodiversity Conservation Act 1999. Following the failure to establish a captive breeding programme this species appears to have become extinct, and no further conservation measures are possible as a result.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Lepidodactylus listeri",
+    "Lepidodactylus listeri":{
       "name":"Christmas Island Chained Gecko",
       "rarity":"1",
       "populationTrend":"Unknown",
       "useTrade":"There is no known use of or trade&#160;in the species, which no longer appears to survive as a wild population.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is currently listed as Critically Endangered under the Environment Protection and Biodiversity Conservation Act (1999), an act of the Australian government. This species range also coincides with the Christmas Island National Park. In 2009 a captive breeding programme was established on Christmas Island, with another population established at Taronga Zoo in 2011 (Threatened Species Scientific Committee 2014). Andrew <em>et al. </em>(2016) reports that the Christmas Island captive population then contained 70 individuals, and the Taronga population was established from 56 animals. Reintroduction of this species to the wild is not feasible in the forseeable future, as it is not presently possible to eradicate Wolf Snakes and other exotic predators from Christmas Island.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":"https://console.echoar.xyz/query?key=shy-voice-0702&file=466c2108-48fc-4bf5-89a2-e7bb180e10a2"
     },
-    {
-      "species":"Cryptoblepharus egeriae",
+    "Cryptoblepharus egeriae":{
       "name":"Christmas Island Blue-tailed Shinning-skink",
       "rarity":"1",
       "populationTrend":"Unknown",
       "useTrade":"There is no evidence that this species is or was utilized.",
       "systems":"Terrestrial",
       "conservativeActions":"Listed as critically endangered under the EPBC Act 1999. Approved conservation advice was &#160;released in 2013. The Christmas Island National Park has initiated a captive breeding programme with the intention of reintroduction, and a secondary captive population was established at Taronga Zoo with a founder population of 83 individuals (Andrew <em>et al.</em> 2016). Reintroduction of this species to the wild is not feasible in the forseeable future, as it is not presently possible to eradicate Wolf Snakes and other exotic predators from Christmas Island. Trials are, however, underway to release captive animals into outdoor enclosures protected from these predators (J. Woinarski pers. comm. 2017). There is the intention to release this species in Cocos (Keeling) Islands (J.P. Emery pers. comm. 2017)",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Malacochersus tornieri",
+    "Malacochersus tornieri":{
       "name":"Pancake Tortoise",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"<em>Malacochersus tornieri</em> is a popular species in the global pet trade, and is traded in significant numbers. Gross export numbers from the CITES Trade database (<a href=\"http://www.unep-wcmc-apps.org/citestrade/report.cfm\">http://www.unep-wcmc-apps.org/citestrade/report.cfm</a>) indicate that the highest export numbers predictably are from the range countries Kenya (4,749 animals 1978-1981, 1996-1999, 2005-06, 2010 onwards) and Tanzania (19,505 animals from 1985 onwards); the export numbers from Zambia are remarkable given the small known area of occurrence (17,160 live animals exported since 1995, 6,400 in 2011 alone). Declared exports (without corresponding import records) from Mozambique (2,850 animals in 1997-1998) and Congo (DRC) (3,700 live animals 1999-2007), and a&#160; confiscation of 209 animals at Entebbe Airport, Uganda in 2000, indicate the likelihood of extensive illegal trade and corresponding complications of monitoring trade in this species and its impact on populations. As well as removing animals, collectors often destroy habitat in process of collecting, using crowbars and jacks to open suitable refuges (Klemens and Moll 1995; Spawls <em>et al</em>. 2002; Malonza 2003; Mwaya <em>et al</em>. 2018).",
       "systems":"Terrestrial",
-      "conservativeActions":"<em>Malacochersus tornieri</em> has been listed in CITES Appendix II since 1975, regulating its international trade with the aim that such trade should not be detrimental to the survival of the species or its ecological role across its natural range. A proposal to transfer the species to Appendix I, which would have resulted in a suspension of international trade for commercial purposes, was submitted and then withdrawn at CITES CoP11 in 2000.&#160;Kenya discontinued exporting <em>M. tornieri</em> from the wild in 1981, but a few farms are authorized to breed for export. However, enforcement is a challenge and illegal collection and export of wild-collected as purportedly captive-bred specimens is highly likely since there is no established marking system. Hence, tortoise farms may act as conduits for export of wild specimens.&#160;A significant milestone in Pancake Tortoise conservation in Tanzania emerged following imposition of an export quota moratorium in 1992 (Kabigumila 1998), and allowance for the private sector to captive-breed the species for live trade demand (MNRT 1998). Currently, at least four farms have been licensed to breed the Pancake Tortoise in Tanzania (Kabigumila 1998; Mbassa and Maganga 2002). The moratorium was lifted in 2018, based on the assurances of Tanzania that there are no intentions to resume the export of specimens collected from the wild ( page 8 of <a href=\"https://cites.org/sites/default/files/eng/com/sc/70/E-SC70-29-02.pdf\">https://cites.org/sites/default/files/eng/com/sc/70/E-SC70-29-02.pdf</a>; page 54 of <a href=\"https://cites.org/sites/default/files/eng/com/sc/70/E-SC70-29-02-A2.pdf\">https://cites.org/sites/default/files/eng/com/sc/70/E-SC70-29-02-A2.pdf</a>).&#160;In Zambia, international trade in Pancake Tortoises was suspended for a while because “laundered” animals from East Africa had presumably been exported from there previously. The suspension held until the suspected presence of natural populations there was verified and its size evaluated by ZAWA (2000). However, no protection of the area known to support Pancake Tortoise populations in Zambia is provided by ZAWA (Chansa and Wagner 2006).&#160;In Tanzania, Pancake Tortoise populations have been reported from 4 of 16 gazetted national parks, namely Serengeti, Tarangire, Ruaha, and Mkomazi. National parks in Tanzania are fairly comprehensively protected and are considered ecological benchmarks (Sinclair <em>et al</em>. 2002). In Kenya, about 95% of the total <em>M. tornieri</em> population occurs outside protected areas, where the best habitat also occurs. Pancake Tortoise presence has been confirmed in the following protected areas, from south to north: Tsavo East National Park (northern sector), Kitui South, Shaba, Buffalo Springs and Samburu National Reserves, and Namunyak Wildlife Conservancy (Malonza 2003; Mwaya <em>et al</em>. 2018). It has also been recorded in some adjacent Laikipia Conservancies (Malonza, unpubl. data).&#160;Across its entire range, Bombi <em>et al</em>. (2013) estimated that only 22.6% of <em>M. tornieri</em> habitat is currently protected. The fact that a majority of the species’ populations occur outside protected areas predispose them to illegal collection for live trade as well as to anthropogenic habitat disturbance.There is a need to promote other non-exploitative economic activities and provide incentives that are linked with community enterprise and alternative livelihoods to reduce local community overexploitation of the species and destruction of its habitat or micro-habitats. There is a need for eco-friendly and sustainable-use initiatives such as eco-tourism; these can reduce the direct reliance on exploitation with environmental resources that affect the species and its habitat.",
-      "realm":"Afrotropical"
+      "conservativeActions":"Malacochersus tornieri has been listed in CITES Appendix II since 1975, regulating its international trade with the aim that such trade should not be detrimental to the survival of the species or its ecological role across its natural range. A proposal to transfer the species to Appendix I, which would have resulted in a suspension of international trade for commercial purposes, was submitted and then withdrawn at CITES CoP11 in 2000.Kenya discontinued exporting M. tornieri from the wild in 1981, but a few farms are authorized to breed for export. However, enforcement is a challenge and illegal collection and export of wild-collected as purportedly captive-bred specimens is highly likely since there is no established marking system. Hence, tortoise farms may act as conduits for export of wild specimens.A significant milestone in Pancake Tortoise conservation in Tanzania emerged following imposition of an export quota moratorium in 1992 (Kabigumila 1998), and allowance for the private sector to captive-breed the species for live trade demand (MNRT 1998). ",
+      "realm":"Afrotropical",
+      "arCode":""
     },
-    {
-      "species":"Leiolopisma alazon",
+    "Leiolopisma alazon":{
       "name":"Ono-i-Lau Ground Skink",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"This species is not traded or in use.",
       "systems":"Terrestrial",
       "conservativeActions":"No conservation measures are in place for this species. Research is needed on the systematics of this complex to determine how the three island subpopulations are related to each other (although preliminary genetic evidence suggests the three islet subpopulations are conspecific - R. Fisher unpubl. data). Reintroduction onto larger islands, if pigs can be controlled, would be an important research project. The <em>ex situ</em> conservation of this species, possibly as insurance colonies, should be investigated.",
-      "realm":"Oceanian"
+      "realm":"Oceanian",
+      "arCode":""
     },
-    {
-      "species":"Cyclura stejnegeri",
+    "Cyclura stejnegeri":{
       "name":"Mona Rhinoceros Iguana",
       "rarity":"2",
       "populationTrend":"Increasing",
       "useTrade":"All <em>Cyclura</em> species are listed in Appendix I of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) and protected by the United States Endangered Species Act. The Mona Rhinoceros Iguanas is also classified as Endangered by the Regulation to Govern the Endangered and Threatened Species in the Commonwealth of Puerto Rico (DNER 2004).",
       "systems":"Terrestrial",
-      "conservativeActions":"The first planned conservation action aimed to increase the survival of Mona Rhinoceros Iguanas was the installation in 1984 of an exclusion fence on the southwestern coastal plain to protect prime nesting areas from egg predation by feral pigs. This structure was in poor condition for over a decade until it was replaced in 2005 by a fence of much higher quality and with a mesh size that excluded pigs yet allowed iguanas to pass through and nest in historic areas. Similar exclusion fences are needed to protect inland forest nesting areas from pigs as well as goats. Fortunately, a well-attended hunting season has kept the feral goat population from expanding and the timing has been moved outside the iguana nesting and incubation seasons (Joglar <em>et al</em>. 2007, M. García pers. comm.).<br/><br/>An <em>in situ</em> headstart program was initiated in 2000 that boosted recruitment of juvenile iguanas for several years and increased the adult population (García and Gerber 2016). Despite the success of the headstart program, it was expensive and only meant to serve as a stopgap measure. Since the primary threats to Mona Rhinoceros Iguanas are invasive mammals, the focus is now on planning for their eradication. The first step toward this goal was the completion of a feasibility study to eradicate feral pigs, cats, and rats from Mona Island (Island Conservation 2013). In addition to ecological and logistical challenges, a major hurdle will be securing the estimated 8.2 million US dollars required for this necessary eradication.<br/><br/>Recent efforts to remove Australian Pine and restore iguana nesting habitat have met with initial success (Figuerola <em>et al</em>. 2018). Using chainsaws and rakes to remove all pine needle debris, six areas were cleared providing <em>ca</em> one km<sup>2</sup> of new nesting habitat for iguanas. Ten iguana nests with hatched eggshells were observed in these restored plots from the 2017 nesting season. Additional pine removals and monitoring to ensure against regrowth are planned.<br/><br/>Additional training of law enforcement personnel is needed to ensure protection of the Mona Rhinoceros Iguana. Some education and outreach materials targeting visitors are in place on the island but needs improvement. A focus in the schools on differentiating native iguanas with invasive Common Green Iguanas, and their roles in the ecosystem, would also benefit this species.",
-      "realm":"Neotropical"
+      "conservativeActions":"The first planned conservation action aimed to increase the survival of Mona Rhinoceros Iguanas was the installation in 1984 of an exclusion fence on the southwestern coastal plain to protect prime nesting areas from egg predation by feral pigs. This structure was in poor condition for over a decade until it was replaced in 2005 by a fence of much higher quality and with a mesh size that excluded pigs yet allowed iguanas to pass through and nest in historic areas. Similar exclusion fences are needed to protect inland forest nesting areas from pigs as well as goats. Fortunately, a well-attended hunting season has kept the feral goat population from expanding and the timing has been moved outside the iguana nesting and incubation seasons (Joglar et al. 2007, M. García pers. comm.)",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Brachylophus vitiensis",
+    "Brachylophus vitiensis":{
       "name":"Fiji Crested Iguana",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"<p>                 </p><p>Although they were found in prehistoric middens (Worthy and Anderson 2009) and Gibbons (1984) cited reports of consumption of <em>Brachylophus </em>species in the 1800s, Fiji Crested Iguanas are no longer hunted or eaten.</p>  <p>&#160;</p>  Currently, Crested Iguanas are found captive at various resorts in the Yasawas, the legality of which is unknown, and whose origins are from the resort’s island or Monuriki. It is known that at one time Crested Iguanas were regularly captured on Monuriki and sold to various resorts and individuals. Iguanas are also illegally held captive as pets on Viti Levu, and escapees have been discovered in various locations and transferred to the captive breeding programme at Kula Eco Park. One animal recently brought in from the town of Lautoka was genetically determined to originate from Waya Island. This informal and illegal trade is likely to have impacted some of the critically small subpopulations.<p></p>",
       "systems":"Terrestrial",
       "conservativeActions":"<p>In 2004, a Species Recovery Plan Workshop was held in Suva, Fiji, and outlined a number of action steps needed to reverse the decline of Fiji Crested Iguanas. The entire island of Yadua Taba is protected as a national park administered by the National Trust of Fiji Islands and known as the Crested Iguana Sanctuary. Recent natural habitat regeneration, after goat removal in 2004, has greatly increased the number of iguanas and demonstrates the real potential for restoring populations of iguanas on other islands. Monuriki Island is currently undergoing regeneration as goats and Pacific Rats have been recently removed. Additionally, captive breeding and eventual release of Monuriki iguanas should jump-start recovery on that island. However, together with Macuata, these three islands comprise less than 160 hectares and habitat protection and restoration of other islands will be needed in the iguana’s range to ensure the long-term viability of this lizard.</p>  <p>&#160;</p>  <p>Because of the success of recovery efforts on Yadua Taba, this iguana has benefited from the celebrity status it receives from the National Trust and is used as a symbol for Fiji biodiversity conservation. Now that this site is more stable, attention needs to focus on the remaining at-risk subpopulations.</p>  <p>&#160;</p>  <p>Further surveys need to be completed in small forest patches on some of the larger islands in the Yasawa Group to determine if any additional isolated subpopulations still persist. This includes islands where only one or two individuals were detected during field surveys in 2000. Genetic confirmation is needed for the iguanas recently found on Malolo and Qalito, as well as determining their abundance. Additional research and conservation needs include life history and ecology studies, threat mediation, reintroduction strategies, and further clarification on the taxonomy of the <em>Brachylophus</em> iguanas.</p>  <p>&#160;</p>  <p>Although Fiji Crested Iguanas have not been observed on Viti Levu and Vanua Levu for many decades, surveys should be conducted in the relict patches of dry forest remaining to confirm their absence.</p>  <p>&#160;</p>  Like all of the <em>Brachylophus</em> iguanas, Fiji Crested Iguanas are protected from international trade by Appendix I of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES).",
-      "realm":"Oceanian"
+      "realm":"Oceanian",
+      "arCode":""
     },
-    {
-      "species":"Heosemys depressa",
+    "Heosemys depressa":{
       "name":"Arakan Forest Turtle",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"<em>Heosemys depressa</em> is cheap in the Chinese pet trade and meat trade and not a very attractive species for the pet trade. It can be higher priced in the US and European pet trade (wild caught) – mostly as high-end collector market. Some captive breeding occurs in USA (e.g. Atlanta Zoo) and Europe. It is consumed mostly for subsistence in Bangladesh.",
       "systems":"Terrestrial|Freshwater (=Inland waters)",
       "conservativeActions":"It is listed on CITES Appendix II and is protected by national legislation in Myanmar, but not in Bangladesh, where it was only recently discovered.<br/><br/>In Bangladesh, it is found in the Sangu Wildlife Sanctuary; in Myanmar it is found in the buffer zones of the Rakhine Yoma Elephant Sanctuary, and the Kyauk Pan Taung Wildlife Sanctuary. Conservation of this species requires, protection and management of suitable habitat, and management and control of harvest and trade. Research into the species' life history, distribution, threats and conservation needs is desirable.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Calumma hafahafa",
+    "Calumma hafahafa":{
       "name":"Bizarre-nosed Chameleon",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"There is no international trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"Bemanevika Lake&#160;is subject to ongoing conservation work and is in the process of being established as a protected area. More information is needed on this species' distribution and population trends, its exposure to and ability to tolerate disturbance, and all aspects of its natural history. Conservation management of the new protected area is required to minimize the impacts of human activities on this species, and to ensure the survival of critical forest habitat.",
-      "realm":"Afrotropical"
+      "realm":"Afrotropical",
+      "arCode":""
     },
-    {
-      "species":"Oedodera marmorata",
+    "Oedodera marmorata":{
       "name":"Marbled Gecko",
       "rarity":"2",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"Protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009).&#160; This species is not presently in any reserves, but part of the Creek à Paul catchment is supposed to be so designated. No conservation species-specific management is currently being undertaken.",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Varanus mitchelli",
+    "Varanus mitchelli":{
       "name":"Mitchell's Water Monitor",
       "rarity":"2",
       "populationTrend":"Decreasing",
       "useTrade":"This species can be kept as a pet in some states of Australia with the appropriate licenses.",
       "systems":"Terrestrial|Freshwater (=Inland waters)",
       "conservativeActions":"The species is listed as vulnerable in the Northern Territory, and is known to occur within multiple conservation reserves (Atlas of Living Australia 2015). The species is listed on CITES Appendix II.",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":"https://console.echoar.xyz/query?key=shy-voice-0702&file=56367d42-dc40-40d2-9d83-ed362dd44db2",
+      "arPicName":"mitchellsWaterMonitorQR"
     },
-    {
-      "species":"Erythrolamprus ornatus",
+    "Erythrolamprus ornatus":{
       "name":"Ornate Ground Snake",
       "rarity":"2",
       "populationTrend":"Unknown",
       "useTrade":"There is no known use or trade in this species. Its extreme rarity (the species having been described as \"the world's rarest snake\" - Catterick 2012) may make it attractive to collectors.",
       "systems":"Terrestrial",
       "conservativeActions":"Maria Major has been within a protected area, the Maria Islands Wildlife Refuge, since 1982, and access is controlled. A species action plan has been prepared for the Saint Lucia Racer covering the years 2015-2024 (Daltry and Morton 2014). This includes recommendations for introducing a racer population to Dennery Island, another of Saint Lucia's satellites, and an examination of the feasibility of creating an invasive-free enclave on mainland Saint Lucia to which the species might be reintroduced. Continued management is required to ensure that Maria Major remains free of invasive alien species.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Batagur affinis",
+    "Batagur affinis":{
       "name":"Southern River Terrapin",
       "rarity":"2",
       "populationTrend":"Decreasing",
-      "useTrade":"<p><span class=\"s1\"><em>Batagur affinis</em> has been heavily exploited both for its flesh and its large eggs for a very long time, and is now also threatened by habitat destruction, sand mining, and construction of hydropower dams (Moll 1990, Moll and Moll 2000, Sharma and Tisen 2000, Iskandar and Erdelen 2006, Platt <em>et al</em>. 2008, Moll <em>et al</em>. 2015).</p>",
+      "useTrade":"Batagur affinis has been heavily exploited both for its flesh and its large eggs for a very long time, and is now also threatened by habitat destruction, sand mining, and construction of hydropower dams (Moll 1990, Moll and Moll 2000, Sharma and Tisen 2000, Iskandar and Erdelen 2006, Platt et al. 2008, Moll et al. 2015).",
       "systems":"Terrestrial|Freshwater (=Inland waters)|Marine",
-      "conservativeActions":"<p>The River Terrapin (as <em>Batagur baska</em>) has been listed as Critically Endangered throughout its range (A1bcd) since the 2000 IUCN Red List, based on a range-wide evaluation in December 1999 that included the populations now attributed to <em>B. affinis</em>. International trade in this species is prohibited by CITES, which lists <em>B. baska </em>(which includes <em>B. affinis</em>)<em> </em>on Appendix I (i.e., prohibited in international commerce by signatory nations). The United States federal listing of <em>B.</em> <em>baska</em> as an Endangered Species prohibits trade in the species to the USA. An action plan for the river terrapin<em> </em>(<em>B.</em> <em>baska</em> and <em>B</em>. <em>affinis</em>) was prepared by Platt <em>et al</em>. (2006). In most of these laws, regulations, and assessments the species is listed as <em>Batagur baska</em>, the name to which these <em>B. affinis</em> populations were previously attributed.</p>",
-      "realm":"Indomalayan"
+      "conservativeActions":"The River Terrapin (as Batagur baska) has been listed as Critically Endangered throughout its range (A1bcd) since the 2000 IUCN Red List, based on a range-wide evaluation in December 1999 that included the populations now attributed to B. affinis. International trade in this species is prohibited by CITES, which lists B. baska (which includes B. affinis) on Appendix I (i.e., prohibited in international commerce by signatory nations). The United States federal listing of B. baska as an Endangered Species prohibits trade in the species to the USA. An action plan for the river terrapin (B. baska and B. affinis) was prepared by Platt et al. (2006). In most of these laws, regulations, and assessments the species is listed as Batagur baska, the name to which these B. affinis populations were previously attributed.",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Dierogekko validiclavis",
+    "Dierogekko validiclavis":{
       "name":"Bold-striped Gecko",
       "rarity":"3",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
-      "conservativeActions":"Protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009).<span style=\"font-style: italic;\"> Dierogekko validiclavis</span> is present in the Réserve de Nature Sauvage du Mt Panié. No conservation management is currently being undertaken, but this species may potentially benefit from proposed predator control in the La Guen catchment on Mt Panié.",
-      "realm":"Australasian"
+      "conservativeActions":"Protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009). Dierogekko validiclavis is present in the Réserve de Nature Sauvage du Mt Panié. No conservation management is currently being undertaken, but this species may potentially benefit from proposed predator control in the La Guen catchment on Mt Panié.",
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Iberolacerta aurelioi",
+    "Iberolacerta aurelioi":{
       "name":"Aurelio's rock lizard",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"This species is listed on Appendix III of the Bern Convention. It does not occur in any protected areas.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Ctenosaura melanosterna",
+    "Ctenosaura melanosterna":{
       "name":"Black-chested Spiny-tailed Iguana",
       "rarity":"3",
       "populationTrend":"Decreasing",
-      "useTrade":"<p></p><p>Adult iguanas and eggs are sought for both immediate consumption and sale. On Cayos Grande, individuals are collected for consumption, but this threat is much more extreme within the Valle de Aguán.&#160; In Olanchito, Valle de Aguán, a festival exists in which the consumption of these iguanas is celebrated and is culturally significant. <span lang=\"EN-GB\">From surveys conducted over the last three years in the Valle de Aguán, locals feel there has been a significant decline in the numbers of iguanas seen. These interviews showed that 84% of the interviewees consume this type of iguana meat of a regular basis, and 60% prefer to eat gravid females. Further calculations show that approximately 12 iguanas are consumed per person per year (S.A. Pasachnik&#160;<em>et al.</em>&#160;unpublished data).</p><p>Illegal exportation for the international pet trade has also been documented for this iguana. Though individuals may be taken from Cayos Cochinos, all documented cases of excessive exploitation and exportation for the pet trade are from the Valle de Aguán. The exact number of animals being exported is difficult to determine because declaration of the species name is not necessary for importation and the exportation is illegal, thus undocumented. Exportation is largely to the United States and Europe. The cost of an individual iguana in the Valle de Aguán varies from $1 to 90 USD, depending on size and sex.</p><p></p>",
+      "useTrade":"Adult iguanas and eggs are sought for both immediate consumption and sale. On Cayos Grande, individuals are collected for consumption, but this threat is much more extreme within the Valle de Aguán. In Olanchito, Valle de Aguán, a festival exists in which the consumption of these iguanas is celebrated and is culturally significant. From surveys conducted over the last three years in the Valle de Aguán, locals feel there has been a significant decline in the numbers of iguanas seen. These interviews showed that 84% of the interviewees consume this type of iguana meat of a regular basis, and 60% prefer to eat gravid females. Further calculations show that approximately 12 iguanas are consumed per person per year (S.A. Pasachniket al.unpublished data).Illegal exportation for the international pet trade has also been documented for this iguana. Though individuals may be taken from Cayos Cochinos, all documented cases of excessive exploitation and exportation for the pet trade are from the Valle de Aguán. The exact number of animals being exported is difficult to determine because declaration of the species name is not necessary for importation and the exportation is illegal, thus undocumented. Exportation is largely to the United States and Europe. The cost of an individual iguana in the Valle de Aguán varies from $1 to 90 USD, depending on size and sex.",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>Cayos Cochinos is located within a Marine Natural Monument, and within the cays the Black-chested Spiny-tailed Iguana is offered protection from exploitation (although the level of protection and enforcement varies between islands).</p>    <p>On the mainland in the Valle de Aguán, a subpopulation occurs within Pico Bonito National Park South, although limited protection or enforcement against collecting is allotted in this area.&#160; Within the Valle de Aguán, locals are working to create a research and breeding station similar to the one established on Utila for the protection and management of the Utila Spiny-tailed Iguana (<em>Ctenosaura bakeri</em>). The board of directors for the Utila Station will advise the Aguán station.</p>    <p>In an effort to reduce illegal trade and over-harvesting, the Black-chested Spiny-tailed Iguana was recently listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES).</p>    <p>Research needs for this iguana include further population surveys, genetic analysis, life history, and monitoring of harvest level trends. Conservation actions recommended include management, monitoring, and protection of the habitat, educational awareness, and trade and harvesting regulation and enforcement. The creation of a species action plan and area-based management plan is needed for the Valle de Aguán subpopulation.</p>",
-      "realm":"Neotropical"
+      "conservativeActions":"Cayos Cochinos is located within a Marine Natural Monument, and within the cays the Black-chested Spiny-tailed Iguana is offered protection from exploitation (although the level of protection and enforcement varies between islands). On the mainland in the Valle de Aguán, a subpopulation occurs within Pico Bonito National Park South, although limited protection or enforcement against collecting is allotted in this area. Within the Valle de Aguán, locals are working to create a research and breeding station similar to the one established on Utila for the protection and management of the Utila Spiny-tailed Iguana (Ctenosaura bakeri). The board of directors for the Utila Station will advise the Aguán station. In an effort to reduce illegal trade and over-harvesting, the Black-chested Spiny-tailed Iguana was recently listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Research needs for this iguana include further population surveys, genetic analysis, life history, and monitoring of harvest level trends. Conservation actions recommended include management, monitoring, and protection of the habitat, educational awareness, and trade and harvesting regulation and enforcement. The creation of a species action plan and area-based management plan is needed for the Valle de Aguán subpopulation.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Goniurosaurus splendens",
+    "Goniurosaurus splendens":{
       "name":"Banded Ground Gecko",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"This species is thought to be collected illegally, but there is no information on levels of harvesting or export.",
       "systems":"Terrestrial",
-      "conservativeActions":"<p><em>Goniurosaurus splendens</em> is designated as a natural monument in Kagoshima Prefecture. Capturing this species is forbidden (Toda 2014).</p>",
-      "realm":"Indomalayan"
+      "conservativeActions":"Goniurosaurus splendens is designated as a natural monument in Kagoshima Prefecture. Capturing this species is forbidden (Toda 2014).",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Atheris desaixi",
+    "Atheris desaixi":{
       "name":"Ashe's Bush Viper",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"Although the export of wildlife is banned in Kenya, this species is in high demand for the international pet trade. It is available for sale in the international pet market, putatively captive-bred but believed to be smuggled. One, now elderly, collector is experienced at collecting this snake for illegal export, and has reported that this snake is now very difficult to find even when chopping down trees known to have harboured vipers in the past (P.K. Malonza pers. comm 2014). The species does appear to be genuinely captive-bred in Germany, but probably in small numbers.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is found in Ngaya Forest, a government protected community forest. On Mt Kenya it occurs outside the boundary of the protected area. The species has been protected in Kenya since 1982 with collection and export both being prohibited. This species was proposed and adopted for listing in CITES Appendix II at the 17th meeting of the Conference of the Parties in 2016 and the listing came into force in January 2017.&#160;Increasing local awareness of the threat to this species and training of rangers is recommended in an effort to try and curtail harvesting of this species. Surveys on the Aberdares and in other forests on Mt. Kenya should be intensified to try and locate additional subpopulations of this species, and conservation measures and monitoring immediately put in place if any are found.",
-      "realm":"Afrotropical"
+      "realm":"Afrotropical",
+      "arCode":""
     },
-    {
-      "species":"Shinisaurus crocodilurus",
+    "Shinisaurus crocodilurus":{
       "name":"Chinese Crocodile Lizard",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"This species has been collected for the pet trade; a total of 642 individuals were reported in CITES exports between 1990 and 2012, with a peak in 2005 when 200 animals were recorded in exports from each of Thailand and Japan (presumably re-exports, as the species is not native to either country). The most recent recorded exports are from 2012, with a total of 17 individuals; in every other year except 2005 33 or fewer animals were recorded in trade, with no consistent trend. The species is, however, thought to be collected for illegal trade in higher volumes; a survey of local villagers in Chinese villages near<em> Shinisaurus</em> habitats found that 54 of 75 (72%) men surveyed hunted the lizard. Twenty one of 75 (28%) hunted the lizard “frequently” (Huang<em> et al</em>. 2008). At the time of the survey, one animal would sell for between 10 and 1,000 RMB (up to $164 USD). More recently, prices have increased to $800-1,500 in the US market (P. Hamilton pers. obs.), but CITES documentation suggests that very few animals are captive-bred. Two hundred RMB is equivalent to two months’ salary in the surveyed areas, so the economic incentive to exploit the species is high (Huang <em>et al.</em> 2008).<br/><br/>The species is traditionally believed to act as a cure for insomnia, and the collection and consumption of the species for use in traditional medicine has likely been ongoing for centuries; with additional, novel pressures on the lizard and apparently small surviving populations this activity is now likely to threaten its survival.<br/><br/>At tourist sites in Viet Nam, some individuals were sold at tourist sites for 10-20 USD (Yen Tu Temple in Quang Ninh Province; Q.T. Nguyen, pers. obs.; Le and Ziegler 2003). The species also appears to be used for food and medicine in small numbers in this area.",
       "systems":"Terrestrial|Freshwater (=Inland waters)",
       "conservativeActions":"While this species is found in several protected areas, at least 50% of the known localities (including the one believed to contain the largest subpopulation – Huang <em>et al.</em> 2008) are outside protected areas and improved enforcement (including specific training of reserve staff focused on protecting this species) is required to prevent illegal harvesting and encroachment into the existing reserves. The species is listed on CITES Appendix II; although the major pressures from trade are currently thought to be from illegal harvesting and from domestic use rather than from legal export regulated by CITES, it has been proposed that the species may warrant listing on Appendix I (Q.T. Nguyen and P. Hamilton pers. comms.) <em>Ex situ</em> conservation should be considered, with a plan for captive breeding and eventual reintroduction. National legislation has been proposed to list this as a protected species in Viet Nam.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Takydromus dorsalis",
+    "Takydromus dorsalis":{
       "name":"Sakishima Grass Lizard",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"There is no information on any use of or trade in this species.",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>Most of its range corresponds to a national park<span class=\"apple-converted-space\">, although there is clearly a need for improved protection of forest habitats on the islands.<span class=\"apple-converted-space\"><span lang=\"EN-US\"></span></p>",
-      "realm":"Indomalayan"
+      "conservativeActions":"Most of its range corresponds to a national park, although there is clearly a need for improved protection of forest habitats on the islands.",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Naultinus rudis",
+    "Naultinus rudis":{
       "name":"Rough Gecko",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"Before harvesting from the wild was banned in the 1980s, this species was heavily collected by domestic reptile enthusiasts for personal collections, placing intense pressure on subpopulations at well-known sites (R. Hitchmough and D. van Winkel pers. comm. 2019). It is also of interest to wildlife poachers for supply to the international pet trade but levels of illegal collection are not known (M. Lettink pers. comm. 2019).",
       "systems":"Terrestrial",
-      "conservativeActions":"The species is listed as Nationally Vulnerable&#160;with the caveat that it is \"Data Poor\" (Hitchmough <em>et al.</em>&#160;2016). It is listed in CITES Appendix II.",
-      "realm":"Australasian"
+      "conservativeActions":"The species is listed as Nationally Vulnerable with the caveat that it is \"Data Poor\" (Hitchmough et al. 2016). It is listed in CITES Appendix II.      ",
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Ctenosaura palearis",
+    "Ctenosaura palearis":{
       "name":"Motagua Spiny-tailed Iguana",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"The Motagua Spiny-tailed Iguana is listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). However, it is known that illegal trade and over-harvesting of the Motagua Spiny-tailed Iguana is occurring. People who catch iguanas for meat usually catch six individuals per month, while illegal traders usually catch 50 to 60 individuals per month. Internet and local market surveys have shown that this species is sold in at least Greece, Germany, and the United States at an average price of $90 USD per individual. All sales of this iguana outside of Guatemala are illegal, as governmental authorities in Guatemala have not issued exportation permits for this iguana to date. This illegal trade is thought to be the main cause of local extirpation of iguanas in some localities (Cotí and Ariano 2008).<br/><br/>The Motagua Spiny-tailed Iguana is used as a protein source by local villagers. In some areas this iguana is heavily hunted in the breeding season for their eggs, which has a large negative effect on the survival and viability of wild populations (Cotí and Ariano 2008). Hunters catch gravid females to consume whole, or they make a ventral incision to extract the eggs, which is then sewn up and the iguana is released. Predictably, these animals soon succumb to bacterial infections and internal hemorrhages, resulting in fatality.",
       "systems":"Terrestrial",
       "conservativeActions":"Zootropic, with the support of the International Iguana Foundation, has initiated a conservation project for the Motagua Spiny-tailed Iguana. The project includes environmental education for local villagers and children focusing on the importance of conserving this iguana and the development of a defined hunting season. The project involves a semi-captive breeding programme in a private reserve (Heloderma Natural Reserve) owned by Zootropic, and is within the range area of the iguana. Within this reserve there is also a scientific research station operated by Zootropic and its partners for monitoring the wild population and its habitat. The reserve encompasses 1.36 km<sup>2</sup>, and is the only area in which this iguana is afforded complete protection from hunting and habitat destruction.<br/><br/>An additional 14.2 km<sup>2</sup> of suitable iguana habitat exists within ten parks and reserves where habitat destruction is legally prohibited, and affects three of the eight subpopulations. Although this additional land is technically protected, there is little to no enforcement against hunting, thus iguanas have been extirpated in some of these areas. Local villagers are currently developing a sustainable-use plan for this iguana.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Paroedura masobe",
+    "Paroedura masobe":{
       "name":"Ian's Masobe Gecko",
       "rarity":"3",
       "populationTrend":"Decreasing",
       "useTrade":"<p>This species is subject to active exploitation for the international pet trade, including both legal export with an annual quota of 10 individuals, and illegal collection within Réserve Naturelle Intégrale de Betampona and Parc National de Zahamena. </p>",
       "systems":"Terrestrial",
       "conservativeActions":"This species is found within the new protected area at Zahamena-Ankeniheny and in Réserve Naturelle Intégrale de Betampona, but there is little information on its distribution within these reserves. Trade in this species needs to be monitored, and protection of its habitat strictly enforced. More research is needed into population trends in this species.",
-      "realm":"Afrotropical"
+      "realm":"Afrotropical",
+      "arCode":""
     },
-    {
-      "species":"Trimeresurus rubeus",
+    "Trimeresurus rubeus":{
       "name":"Ruby-eyed Green Pitviper",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"Somaweera and Somaweera (2010) report green pit vipers as being common  in snake wine, but were not able to distinguish between species. <em>C. rubeus</em> probably forms a significant part of this trade (B. Stuart pers. comm. September 2011). Embryos from this live-bearing species are eaten in southern Vietnam in low numbers (Q.T. Nguyen pers. comm. September 2011).",
       "systems":"Terrestrial",
       "conservativeActions":"This species has been recorded from protected areas in Vietnam and Cambodia, with only one of the known localities (in Vietnam) being unprotected (Malhotra <span style=\"font-style: italic;\">et al</span>. 2011, Geissler <span style=\"font-style: italic;\">et al.</span> 2011). Surveys of degraded habitat, including plantations, are recommended to establish the limits of this snake's habitat tolerances and hence its susceptibility to threats. Taxonomic study is needed to establish the identity of animals from Phu Quoc.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":"https://console.echoar.xyz/query?key=shy-voice-0702&file=3d545140-fba7-491b-b0ce-58080b1ce8f7",
+      "arPicName":"rubyEyedGreenPitviperQR"
     },
-    {
-      "species":"Acanthodactylus felicis",
+    "Acanthodactylus felicis":{
       "name":"Cat Fringe-Fingered Lizard",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"This species is not used or traded.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is probably not found in any protected areas. Research is needed throughout this lizard's range in order to establish the distribution and number of subpopulations, and to evaluate the threats to them from development. Taxonomic research is required to clarify its relationship with <em>A. yemenensis.</em>",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Tarentola chazaliae",
+    "Tarentola chazaliae":{
       "name":"Helmethead Gecko",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"This species is regularly found in the pet trade, in relatively high numbers.",
       "systems":"Terrestrial",
       "conservativeActions":"It exists in protected areas in Morocco, in the Banc d'Arguin National Park in Mauritania, and probably in other reserves elsewhere in its range. However, most of its range remains outside protected areas, and is likely to be threatened by development; controls on development are urgently required. Research to determine population size and trade volumes are essential to determine the impacts of harvesting on this species.",
-      "realm":"Afrotropical|Palearctic"
+      "realm":"Afrotropical|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Conolophus pallidus",
+    "Conolophus pallidus":{
       "name":"Barrington Land Iguana",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"All Galápagos iguanas are listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Ecuador has never declared export of live specimens of <em>Conolophus pallidus</em> for commercial trade (CITES trade data, UNEP-WCMC 2018) and they are currently not known to exist in the illegal international pet trade, unlike <em>Conolophus subcristatus</em>.",
       "systems":"Terrestrial",
-      "conservativeActions":"The entire distribution of Marine Iguanas is included in three protected areas: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site.<br/><br/>Several eradication programmes for invasive alien predators have occurred throughout the Galápagos, including goats (<em>Capra hircus</em>) from Santa Fé (Phillips <em>et al</em>. 2012) in the 1970s that has had a substantial impact on regeneration of the vegetation and appears to have promoted the recovery of the iguana population (Christian and Tracy 1980, Snell <em>et al</em>. 1984).<br/><br/>Conservation and research actions recommended for the species include further genetic analysis of the historic specimen collection of Barrington Land Iguanas from the era before the goats were on the island to pinpoint the timing and duration of the observed genetic reduction. Genetic data may be available to reconstruct the demographic history of the species. Regular and continued monitoring of the iguana population is recommended, as well as monitoring the impact of the tortoise introduction to the vegetation and the potential competition with iguanas for food resources. Attention should be made to the population trend and recovery of iguanas as the tortoises age, including in relation to the frequency and severity of droughts in a future climate.",
-      "realm":"Neotropical"
+      "conservativeActions":"The entire distribution of Marine Iguanas is included in three protected areas: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site.Several eradication programmes for invasive alien predators have occurred throughout the Galápagos, including goats (Capra hircus) from Santa Fé (Phillips et al. 2012) in the 1970s that has had a substantial impact on regeneration of the vegetation and appears to have promoted the recovery of the iguana population (Christian and Tracy 1980, Snell et al. 1984).Conservation and research actions recommended for the species include further genetic analysis of the historic specimen collection of Barrington Land Iguanas from the era before the goats were on the island to pinpoint the timing and duration of the observed genetic reduction. Genetic data may be available to reconstruct the demographic history of the species. Regular and continued monitoring of the iguana population is recommended, as well as monitoring the impact of the tortoise introduction to the vegetation and the potential competition with iguanas for food resources. Attention should be made to the population trend and recovery of iguanas as the tortoises age, including in relation to the frequency and severity of droughts in a future climate.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Conolophus subcristatus",
+    "Conolophus subcristatus":{
       "name":"Galapagos Land Iguana",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"Galápagos Land Iguanas are listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Ecuador has never declared export of live specimens of <em>Conolophus subcristatus</em> for commercial trade (CITES trade data, UNEP-WCMC 2018), however, they are known to exist in the pet trade. Four smuggling cases with prosecutions occurred between 2010 and 2015 (Auliya <em>et al</em>. 2016). Molecular tools were used to unambiguously assign and return the four iguanas to the origin subpopulation (Gentile <em>et al</em>. 2013). While not significantly reducing the population currently, their entry into the pet trade is of concern because it becomes easier to mask illegal extraction from the wild.",
       "systems":"Terrestrial",
-      "conservativeActions":"All populations of Galápagos Land Iguanas are included in all three protected area designations: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site.<br/><br/>Several eradication programmes have occurred that benefit Galápagos Land Iguanas, including feral goats from Baltra, Plaza Sur, Santiago, and northern Isabela (separated from the south by a 10+ km-long lava isthmus; Carrion <em>et al</em>. 2011). Goats have been reduced, but not eliminated (T. Grant pers. obs. 2014) from northwestern Santa Cruz to protect the subpopulations of Bahía Conway and Cerro Dragón. Feral dogs were eradicated from Bahía Conway on Santa Cruz in the early 1980s to protect iguanas, and are also controlled to very low levels in southern Isabela (Phillips <em>et al</em>. 2012). Feral cats have been eradicated from Baltra and Venecia, and Black Rats from Seymour Norte (Harper <em>et al</em>. 2011, Phillips <em>et al</em>. 2012). The impact of rats is less well understood; however, it was documented that an increased number of Marine Iguana hatchlings were observed following a nearly complete eradication of Black Rats from Pinzón in 1988 (Cayot <em>et al</em>. 1994).<br/><br/>Multiple translocations of Galápagos Land Iguanas have occurred since 1932. During the Hancock Expedition (1932–33), <em>ca</em> 70 iguanas were captured from Baltra where they appeared to be malnourished, perhaps due to competition for food with introduced goats, and introduced to Seymour Norte where neither goats nor iguanas were present (Woram 1992, Cayot 2008). This experimental translocation later benefited the Baltra iguana population as they were eliminated from Baltra by 1954. Soon after the eradication of invasive mammals on Baltra, iguanas were reintroduced in 1991 (Cayot and Menoscal 1992).<br/><br/>Following the nearly complete decimation of the subpopulations at Bahía Conway (Santa Cruz) and Bahía Cartago (Isabela) by feral dogs in the mid-1970s, an iguana captive breeding programme was initiated by the Galápagos National Park Service and the Charles Darwin Research Station (CDRS), and the surviving iguanas were transferred to the CDRS on Santa Cruz. In 1977, iguanas from the CDRS were introduced to Venecia, an islet off northwestern Santa Cruz, and since it lacked proper soil an artificial nesting site was constructed. Offspring from Venecia have subsequently been translocated to nearby Cerro Dragón (Cayot <em>et al</em>. 1994). Iguanas from the CDRS were also reintroduced back to Bahía Cartago, Isabela. The iguana breeding programme at the CDRS was discontinued in 2008 (Cayot 2008).<br/><br/>In January 2019, a group of 2,150 iguanas from Seymour Norte were reintroduced to Santiago, following the eradication of feral domestic pigs in 2001 (Anonymous 2019, Kumar <em>et al</em>. 2019). If they survive and become established, this will potentially increase the area of occupancy for Galápagos Land Iguanas.<br/><br/>Conservation and research actions recommended for this species include an improved knowledge of population size and trends, distribution and habitat trends, and the impact of invasive species management. Further research and management discussions are needed concerning the results of molecular analysis by Tzika <em>et al</em>. (2008) that determined distinctions between western, central, and Plaza Sur populations, as well as individuals in the introduced Seymour Norte and Baltra populations showing a mix of Isabela and Santa Cruz ancestry due to poorly documented translocations. Additional studies of the Plaza Sur population are needed to better understand their genetic relationship within&#160;<em>C</em><em>onolophus</em>. Analysis of Rábida as a potential reintroduction site should be considered.",
-      "realm":"Neotropical"
+      "conservativeActions":"All populations of Galápagos Land Iguanas are included in all three protected area designations: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site.Several eradication programmes have occurred that benefit Galápagos Land Iguanas, including feral goats from Baltra, Plaza Sur, Santiago, and northern Isabela (separated from the south by a 10+ km-long lava isthmus; Carrion et al. 2011). Goats have been reduced, but not eliminated (T. Grant pers. obs. 2014) from northwestern Santa Cruz to protect the subpopulations of Bahía Conway and Cerro Dragón. Feral dogs were eradicated from Bahía Conway on Santa Cruz in the early 1980s to protect iguanas, and are also controlled to very low levels in southern Isabela (Phillips et al. 2012). Feral cats have been eradicated from Baltra and Venecia, and Black Rats from Seymour Norte (Harper et al. 2011, Phillips et al. 2012). The impact of rats is less well understood; however, it was documented that an increased number of Marine Iguana hatchlings were observed following a nearly complete eradication of Black Rats from Pinzón in 1988 (Cayot et al. 1994).Multiple translocations of Galápagos Land Iguanas have occurred since 1932.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Crocodylus palustris",
+    "Crocodylus palustris":{
       "name":"Mugger",
       "rarity":"4",
       "populationTrend":"Stable",
       "useTrade":"Eggs are taken by humans and the species is also poached in small numbers for its skin and meat as well as its use in medicine.",
       "systems":"Terrestrial|Freshwater (=Inland waters)",
       "conservativeActions":"This species is listed under CITES Appendix I. Management of the species is largely based on the legal protection of wild populations and captive breeding for restocking natural populations. Between 1978-1992 in India, a total of 1,193 captive bred individuals have been used to restock populations in 28 protected areas (Ross 1998). However, in 1994 due to overcrowding in captive centres, the production of new offspring was ceased by the Indian Government. Protection is moderately effective in protected areas in India, Sri Lanka, and Iran.<br/><br/>Education and public awareness into the importance of crocodiles to their habitats is needed (Santiapillai and Silva 2001), and continued monitoring of the populations is required.",
-      "realm":"Indomalayan|Palearctic"
+      "realm":"Indomalayan|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Chelonoidis duncanensis",
+    "Chelonoidis duncanensis":{
       "name":"Pinz'n Giant Tortoise",
       "rarity":"4",
       "populationTrend":"Increasing",
       "useTrade":"The population was heavily exploited by whalers&#160;in the 19th century who provisioned their ships with living tortoises&#160;(Pritchard 1996).",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>                    </p><p>Legislation and regulations:&#160;<em>Chelonoidis duncanensis</em>&#160;is protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. All of Pinzón and thus the entire<em>&#160;</em>native range of&#160;<em>C.</em>&#160;<em>duncanensis&#160;</em>is protected as part of the Galápagos National Park. Following the extirpation of most of the adult population of this species by 19th century exploitation by whalers and the subsequent total depredation of hatchlings by introduced Black Rats in the 20th century, a captive breeding and headstart program was initiated on Santa Cruz Island in 1965 by the Charles Darwin Research Station, and is currently run by the Galápagos National Park Directorate. Gradual repatriation of headstarted tortoises has been successfully undertaken since the 1970s (Rhodin <em>et al</em>. 1983, Caporaso 1991, Cayot <em>et al</em>. 1994), and the population is recovering. In December 2012, a rat eradication campaign was successfully completed.&#160;The first tortoise hatchlings born in the wild were documented in December 2014 (Tapia <em>et al</em>. 2015).&#160;Rearing young in captivity will continue for some time while the population continues to grow.</p>  <p></p>",
-      "realm":"Neotropical"
+      "conservativeActions":"Legislation and regulations:Chelonoidis duncanensisis protected under Ecuadorian national law. It has been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. All of Pinzón and thus the entirenative range ofC.duncanensisis protected as part of the Galápagos National Park. Following the extirpation of most of the adult population of this species by 19th century exploitation by whalers and the subsequent total depredation of hatchlings by introduced Black Rats in the 20th century, a captive breeding and headstart program was initiated on Santa Cruz Island in 1965 by the Charles Darwin Research Station, and is currently run by the Galápagos National Park Directorate. Gradual repatriation of headstarted tortoises has been successfully undertaken since the 1970s (Rhodin et al. 1983, Caporaso 1991, Cayot et al. 1994), and the population is recovering. In December 2012, a rat eradication campaign was successfully completed.The first tortoise hatchlings born in the wild were documented in December 2014 (Tapia et al. 2015).Rearing young in captivity will continue for some time while the population continues to grow.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Lepidochelys olivacea",
+    "Lepidochelys olivacea":{
       "name":"Olive Ridley",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"",
       "systems":"Terrestrial|Marine",
-      "conservativeActions":"Most of the conservation actions on behalf of the Olive Ridley at national and international levels have been based on the species’ listing under the <span style=\"font-weight: bold; font-style: italic;\">Endangered </span>category in the IUCN Red List. As an Appendix I species under CITES (Convention on International Trade in Endangered Species) the international trade of skins from the species, which fuelled the large scale commercial exploitation of the Olive Ridley from the 1960s into the 1980s was effectively halted. Other relevant international instruments that list the Olive Ridley as threatened and hence obligate its conservation by member states include: the Convention on Migratory Species (CMS) and the Inter-American Convention for the Protection and Conservation of Sea Turtles (IAC). CMS-promoted Memoranda of Understanding for the conservation and management of marine turtles and their habitats have been signed by the Olive Ridley’s range states in the Indian Ocean and South East Asia (known as IOSEA) as well as in other regions such as the Atlantic Coast of Africa under the Memorandum of Understanding concerning Conservation Measures for Marine Turtles of the Atlantic Coast of Africa where 21 out of 26 range states participate.<br/><br/>On the basis of the species’ classification in the IUCN Red List or in national endangered species lists, local legislatures of range states confer protection to the Olive Ridley. Although this sanctions law-enforcement, the implementation remains patchy at the global scale because of paucity in enforcement capabilities. Successful conservation has usually relied on well-coordinated national programs in combination with local and non-governmental organizations incorporating public outreach. Statutory use and enforcement of the Turtle Excluder Devices in the shrimp trawlers has also proven critical in some areas with high levels of interaction with this fishery.<br/><br/>Despite the legislative efforts to protect the Olive Ridley, human impacts continue to be significant. In some areas (such as West Africa and South East Asia), extensive monitoring needs to be implemented to identify regions and stressors requiring priority actions. Bycatch and illegal take particularly from the coastal, artisanal fisheries need to be evaluated through adequate on-board observer programs and properly addressed. The beetle infestation of the Escobilla rookery must be adequately evaluated and acceptable measures of biological control of the insect need to be implemented. The impact from the increasing development of much of the range state’s coastline has to be evaluated and suitable mitigation measures implemented.",
-      "realm":"Afrotropical|Australasian|Indomalayan|Nearctic|Neotropical|Palearctic"
+      "conservativeActions":"Most of the conservation actions on behalf of the Olive Ridley at national and international levels have been based on the species’ listing under the Endangered category in the IUCN Red List. As an Appendix I species under CITES (Convention on International Trade in Endangered Species) the international trade of skins from the species, which fuelled the large scale commercial exploitation of the Olive Ridley from the 1960s into the 1980s was effectively halted. Other relevant international instruments that list the Olive Ridley as threatened and hence obligate its conservation by member states include: the Convention on Migratory Species (CMS) and the Inter-American Convention for the Protection and Conservation of Sea Turtles (IAC). CMS-promoted Memoranda of Understanding for the conservation and management of marine turtles and their habitats have been signed by the Olive Ridley’s range states in the Indian Ocean and South East Asia (known as IOSEA) as well as in other regions such as the Atlantic Coast of Africa under the Memorandum of Understanding concerning Conservation Measures for Marine Turtles of the Atlantic Coast of Africa where 21 out of 26 range states participate.",
+      "realm":"Afrotropical|Australasian|Indomalayan|Nearctic|Neotropical|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Manouria impressa",
+    "Manouria impressa":{
       "name":"Impressed Tortoise",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"It is listed on CITES Appendix II.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Centrochelys sulcata",
+    "Centrochelys sulcata":{
       "name":"African Spurred Tortoise",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"It is listed on CITES Appendix II.",
-      "realm":"Afrotropical|Palearctic"
+      "realm":"Afrotropical|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Marmorosphax montana",
+    "Marmorosphax montana":{
       "name":"Jessica's Montana Skink",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"Protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009). Not listed on CITES. Not present in any reserves and no conservation management is currently being undertaken. Given its highly restricted area of occupancy, formal protection of existing habitat for this species is a high priority. <br/><br/>Further research on the population, habitat status, and threats to <em>M. montana</em> is recommended as the restricted range and posed threats suggests that this species could qualify for a higher threat category in the future.",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Nannoscincus gracilis",
+    "Nannoscincus gracilis":{
       "name":"Gracile Dwarf Skink",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"Protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009). Not listed on CITES. <br/><br/>The distribution of this species occurs in protected areas, including Réserve de Nature Sauvage du Massif de l’Aoupinié and Mont Do, offering small safeguards against habitat loss and degradation. However, these areas need to be managed to provide effective conservation. No specific conservation management is currently being undertaken for this species. Research and monitoring of the population, habitat and threat status should be carried out.",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Nannoscincus mariei",
+    "Nannoscincus mariei":{
       "name":"Earless Dwarf Skink",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"This species is protected in Province Nord under Code de l'environnement  de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008)  and in Province Sud under Code de l'environnement de la Province Sud  (Délibération No. 25-2009/APS, 20 March 2009). It is present in Parc  Provincial de la Rivière Bleue and a number of other reserves in the  south including Mont Mou, Mont Koghis, Pic du Pin and Forêt Nord. No  active conservation management is being undertaken.",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Lacertoides pardalis",
+    "Lacertoides pardalis":{
       "name":"New Caledonian Leopard Skink",
       "rarity":"4",
       "populationTrend":"Unknown",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"This species is protected in Province Nord under Code de l'environnement de la Province Nord (Délibération No. 306-2008/APN, 24 October 2008) and in Province Sud under Code de l'environnement de la Province Sud (Délibération No. 25-2009/APS, 20 March 2009). It is present in La réserve naturelle de la Forêt Nord. No specific conservation management is currently being undertaken. Ka Yé Wagwé is a high priority for protection (perhaps through establishing a protected area or extending the adjacent Reserve de Madeleine).",
-      "realm":"Australasian"
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Gekko shibatai",
+    "Gekko shibatai":{
       "name":"Vandy's Gekko Shibatai",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"There is no information on any use of or trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"There are no conservation measures in place for this species.",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Plestiodon kishinouyei",
+    "Plestiodon kishinouyei":{
       "name":"Japanese Skink",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"There is no trade and no general use in this species.",
       "systems":"Terrestrial",
-      "conservativeActions":"<p><em>Plestiodon kishinouyei</em> was designated as a Okinawa Prefecture Natural Treasure in 1975. Capturing this animal is&#160;prohibited.&#160;</p>",
-      "realm":"Indomalayan"
+      "conservativeActions":"Plestiodon kishinouyei was designated as a Okinawa Prefecture Natural Treasure in 1975. Capturing this animal isprohibited.",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Goniurosaurus kuroiwae",
+    "Goniurosaurus kuroiwae":{
       "name":"Kuroiwa's Ground Gecko",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"It is likely to have been collected by illegal pet traders on Okinawajima,&#160;but it is unknown whether this activity is currently ongoing.",
       "systems":"Terrestrial",
-      "conservativeActions":"This species<em style=\"font-family: Meiryo; font-size: medium;\">&#160;</em>is assigned as a natural monument in Okinawa Prefecture. Capture is forbidden (Toda 2014).&#160;Its distribution range includes national parks in Okinawajima Island, although there is clearly a need for improved protection of forest habitats in the island.",
-      "realm":"Indomalayan"
+      "conservativeActions":"This speciesis assigned as a natural monument in Okinawa Prefecture. Capture is forbidden (Toda 2014).Its distribution range includes national parks in Okinawajima Island, although there is clearly a need for improved protection of forest habitats in the island.",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Gopherus evgoodei",
+    "Gopherus evgoodei":{
       "name":"Sinaloan Thornscrub Tortoise",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"<p>There appears to be some limited localized collection of tortoises for consumption and the pet trade. In the past, people used them more for consumption and occasionally as pets, but many ranchers still keep tortoises as pets.</p>",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>Natural successional forces can restore habitat quality for&#160;<em>Gopherus evgoodei&#160;</em>in Buffelgrass areas upon cessation of slashing and burning. Secondary growth of native, woody species can quickly replace Buffelgrass in TDF. There is some evidence for this in thornscrub as well, although the lack of a seed source for the larger woody species and cacti at distances from intact TDF may require active revegetation efforts. Many local people are aware that tortoises enjoy protection and are part of nature. Their occurrence benefits society by providing employment in ecotourism and natural resource conservation; interview evidence strongly indicates that people in the TDF region no longer regard&#160;<em>G. evgoodei</em>&#160;as a potential food source, and recognize a valid conservation ethic for the species. A positive trend involves the establishment and partial re-purposing of private ranches as hunting and conservation reserves throughout much of the tortoise’s distribution in Mexico.&#160;The federal government has established large protected areas, which include a portion of<em> G. evgoodei</em>’s range. Within one of these, Área de Protección de Flora y Fauna Sierra de Álamos-Río Cuchujaqui, is a recently established, privately owned reserve, Reserva Monte Mojino.</p><p></p>",
-      "realm":"Nearctic"
+      "conservativeActions":"Natural successional forces can restore habitat quality forGopherus evgoodeiin Buffelgrass areas upon cessation of slashing and burning. Secondary growth of native, woody species can quickly replace Buffelgrass in TDF. There is some evidence for this in thornscrub as well, although the lack of a seed source for the larger woody species and cacti at distances from intact TDF may require active revegetation efforts. Many local people are aware that tortoises enjoy protection and are part of nature. Their occurrence benefits society by providing employment in ecotourism and natural resource conservation; interview evidence strongly indicates that people in the TDF region no longer regardG. evgoodeias a potential food source, and recognize a valid conservation ethic for the species. A positive trend involves the establishment and partial re-purposing of private ranches as hunting and conservation reserves throughout much of the tortoise’s distribution in Mexico.The federal government has established large protected areas, which include a portion of G. evgoodei’s range. Within one of these, Área de Protección de Flora y Fauna Sierra de Álamos-Río Cuchujaqui, is a recently established, privately owned reserve, Reserva Monte Mojino.",
+      "realm":"Nearctic",
+      "arCode":""
     },
-    {
-      "species":"Chelonoidis vandenburghi",
+    "Chelonoidis vandenburghi":{
       "name":"Volcano Alcedo Giant Tortoise",
       "rarity":"4",
       "populationTrend":"Increasing",
       "useTrade":"<p>Tortoises on Isabela Island, including&#160;<em>C. vandenburghi</em>, were subject to extensive over-exploitation for food by sailors and settlers in the 18th and 19th centuries, from which they still have not recovered (Pritchard 1996); however, this species&#160;on Alcedo Volcano&#160;appears to have been targeted less than most others, as most of the tortoises (and critical nesting areas) occurred relatively far from the coast and at higher elevations, making access more difficult.</p>",
       "systems":"Terrestrial",
-      "conservativeActions":"All&#160;Galápagos&#160;tortoises are protected from exploitation&#160;under Ecuadorian national law. All&#160;Galápagos&#160;tortoises&#160;have&#160;been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. Nearly all of Isabela, including the entirety of Alcedo Volcano, are&#160;protected as part of&#160;the Galápagos&#160;National Park. Research and conservation needs include: surveying and monitoring tortoise population size and distribution, studies of tortoise movement and habitat <a>use</a><span class=\"MsoCommentReference\">, taxonomic clarification and population genetics studies, and monitoring of ecosystem restoration (with potential for habitat management) following the eradication of goats and donkeys. Evaluation of the possible positive benefits versus negative impacts of tortoise-focused ecotourism is desirable. The only visitor site where it is currently possible to see <em>Chelonoidis vandenburghi</em> is at Urbina Bay, where the numbers continue to increase. The visitor trail to the Alcedo Volcano caldera rim from the eastern side was closed prior to Project Isabela (goat eradication work from 1998-2006) and has not been reopened.",
-      "realm":"Neotropical"
+      "conservativeActions":"All Galápagos tortoises are protected from exploitationunder Ecuadorian national law. All Galápagos tortoises have been included in Appendix I of CITES since 1975, prohibiting all forms of commercial international trade. Nearly all of Isabela, including the entirety of Alcedo Volcano, areprotected as part ofthe GalápagosNational Park. Research and conservation needs include: surveying and monitoring tortoise population size and distribution, studies of tortoise movement and habitat use, taxonomic clarification and population genetics studies, and monitoring of ecosystem restoration (with potential for habitat management) following the eradication of goats and donkeys. Evaluation of the possible positive benefits versus negative impacts of tortoise-focused ecotourism is desirable. The only visitor site where it is currently possible to see Chelonoidis vandenburghi is at Urbina Bay, where the numbers continue to increase. The visitor trail to the Alcedo Volcano caldera rim from the eastern side was closed prior to Project Isabela (goat eradication work from 1998-2006) and has not been reopened.",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Python bivittatus",
+    "Python bivittatus":{
       "name":"Burmese Python",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"This large constrictor is harvested for food, skin for use in the leather industry, medicinal purposes, and the pet trade. It is known to be used in snake wine in Viet Nam, but in small numbers, with 13 individuals recorded in one recent study (Somaweera and Somaweera 2010). The species is commercially bred in Viet Nam and China, however, production systems vary and Vietnamese operations are reliant on breeding wild-caught individuals, while Chinese systems also breed subsequent captive generations and so are not reliant on a regular wild source (M. Auliya pers. comm. March 2012). Trade in this species is illegal in much of its range due to national protection, however, the species is illegally imported into China and source populations for this trade cannot be traced (M. Lau pers. comm. September 2011). The species is kept by collectors and as pets in much of its range (M. Auliya pers. comm. September 2011). Despite public concerns about the introduction of pythons to the Florida Everglades and their low commercial value, thousands are still imported into the United States from Viet Nam as pets (M. Auliya pers. comm. September 2011). The species is also still imported to Europe. China has recently developed a market for low-quality snake skins, largely supplied from west Malaysia, and pythons may also be supplied for this trade.",
       "systems":"Terrestrial",
-      "conservativeActions":"Curbing harvesting of this species throughout its range is needed if populations are to persist outside Thailand. The biology of the species is being extensively studied in its introduced range in southern Florida (e.g. Snow <span style=\"font-style: italic;\">et al.</span> 2007, Dorcas <span style=\"font-style: italic;\">et al.</span> 2011, Dorcas <span style=\"font-style: italic;\">et al.</span> 2012)<span style=\"font-style: italic;\"> </span>due to probable negative impacts on the ecosystem and fear by the U.S. public, and more is now known about the species in its introduced range than its native range. More research is required on native populations throughout its range, including those in Indonesia, China, Viet Nam and Cambodia, particularly to establish the effects of trade on this python (Q.T. Nguyen pers. comm. August 2011). It is listed on CITES Appendix II. It is a protected species in Viet Nam, China, Thailand and Indonesia, and is known from protected areas (Q.T. Nguyen, M. Lau and M. Auliya pers. comm. September 2011). It is listed as Critically Endangered in the Vietnam Red Data Book (Dang <span style=\"font-style: italic;\">et al.</span> 2007) and in the Chinese national Red List (Wang and Xie 2009).",
-      "realm":"Indomalayan"
+      "conservativeActions":"Curbing harvesting of this species throughout its range is needed if populations are to persist outside Thailand. The biology of the species is being extensively studied in its introduced range in southern Florida (e.g. Snow et al. 2007, Dorcas et al. 2011, Dorcas et al. 2012) due to probable negative impacts on the ecosystem and fear by the U.S. public, and more is now known about the species in its introduced range than its native range. More research is required on native populations throughout its range, including those in Indonesia, China, Viet Nam and Cambodia, particularly to establish the effects of trade on this python (Q.T. Nguyen pers. comm. August 2011). It is listed on CITES Appendix II. It is a protected species in Viet Nam, China, Thailand and Indonesia, and is known from protected areas (Q.T. Nguyen, M. Lau and M. Auliya pers. comm. September 2011). It is listed as Critically Endangered in the Vietnam Red Data Book (Dang et al. 2007) and in the Chinese national Red List (Wang and Xie 2009).",
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Abronia vasconcelosii",
+    "Abronia vasconcelosii":{
       "name":"Bocourt's arboreal alligator lizard",
       "rarity":"4",
       "populationTrend":"Decreasing",
       "useTrade":"Information on use/trade was not available for this assessment.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is present in several protected areas. Conservation needs include improved habitat protection and management, and better information on population trends.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Amblyrhynchus cristatus",
+    "Amblyrhynchus cristatus":{
       "name":"Marine Iguana",
       "rarity":"4",
       "populationTrend":"Decreasing",
-      "useTrade":"This species is listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Wildlife trafficking is the third most profitable illegal activity in the world, and although Ecuador has never declared export of live specimens of <em>Amblyrhynchus cristatus</em> for commercial trade (CITES trade data, UNEP-WCMC 2018), they are known to exist in the pet trade. Four smuggling cases with prosecutions occurred between 2010 and 2015 (Auliya <em>et al</em>. 2016). While not significantly reducing the population currently, their entry into the pet trade is of concern.",
+      "useTrade":"This species is listed in Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Wildlife trafficking is the third most profitable illegal activity in the world, and although Ecuador has never declared export of live specimens of Amblyrhynchus cristatus for commercial trade (CITES trade data, UNEP-WCMC 2018), they are known to exist in the pet trade. Four smuggling cases with prosecutions occurred between 2010 and 2015 (Auliya et al. 2016). While not significantly reducing the population currently, their entry into the pet trade is of concern.",
       "systems":"Terrestrial|Marine",
-      "conservativeActions":"The entire Marine Iguana distribution is included in three protected areas: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site. Because the Galápagos is a high tourism area, it has attracted large numbers of migrants from the Ecuadorian mainland seeking tourist industry jobs. To curb population increase, Ecuador enacted a new law (Ley Orgánica de Régimen Especial para la Conservación y Desarrollo Sustentable de la Provincia de Galápagos: LOREG) requiring a special visa to visit the Galápagos, and there are strict limits on who can move there permanently (Strahm and Patry 2010).<br/><br/>Several eradication programmes have occurred in the Galápagos, including feral goats from several islands, cats from Baltra and Venecia, and Black Rats from Seymour Norte and Bainbridge #4 (Phillips <em>et al</em>. 2012). Increased efforts to eradicate or control cats, dogs, rats, and pigs to benefit all subpopulations of Marine Iguanas is sorely needed. The impact of rats is less well understood, however, it was documented that more hatchlings than normal were observed following a nearly complete eradication of Black Rats from Pinzón in 1988 (Cayot <em>et al</em>. 1994).<br/><br/>Conservation and research actions recommended for the species include an improved knowledge of population size, trends, distribution, factors limiting population size, habitat trends, and invasive species management. Some populations are of particular conservation concern and further research on the impact of low effective population size is recommended. Research to understand the impact of warming waters (climate change and El Niño) on individual algae species, along with other factors affecting algae community composition and iguana foraging dynamics, is recommended (Shepherd and Hawks 2005, Vinueza <em>et al</em>. 2006, Tomkins and Wolff 2017). An increased understanding of the effect of widespread oceanic pollution, including oil spills and micro-plastics, on Marine Iguanas and their micro-biota (which enable effective digestion) is also needed. Plastic debris ranks as one of the most abundant and persistent solid wastes at sea and shorelines, representing 25% of the total marine debris collected during beach cleanups in the Galápagos (Alava <em>et al</em>. 2014). Improved biosecurity measures to prevent disease introductions, such as West Nile Virus, avian malaria, and other are also recommended. Ongoing monitoring for introduced pathogens in Galápagos reptiles and other fauna is needed (Bataille <em>et al</em>. 2009; Eastwood <em>et al</em>. 2013, 2014).",
-      "realm":"Neotropical"
+      "conservativeActions":"The entire Marine Iguana distribution is included in three protected areas: Galápagos National Park and National Marine Reserve, Galápagos Islands Man and Biosphere Reserve (UNESCO), and Galápagos Islands World Heritage Site. Because the Galápagos is a high tourism area, it has attracted large numbers of migrants from the Ecuadorian mainland seeking tourist industry jobs. To curb population increase, Ecuador enacted a new law (Ley Orgánica de Régimen Especial para la Conservación y Desarrollo Sustentable de la Provincia de Galápagos: LOREG) requiring a special visa to visit the Galápagos, and there are strict limits on who can move there permanently (Strahm and Patry 2010).Several eradication programmes have occurred in the Galápagos, including feral goats from several islands, cats from Baltra and Venecia, and Black Rats from Seymour Norte and Bainbridge #4 (Phillips et al. 2012). Increased efforts to eradicate or control cats, dogs, rats, and pigs to benefit all subpopulations of Marine Iguanas is sorely needed. The impact of rats is less well understood, however, it was documented that more hatchlings than normal were observed following a nearly complete eradication of Black Rats from Pinzón in 1988 (Cayot et al. 1994).Conservation and research actions recommended for the species include an improved knowledge of population size, trends, distribution, factors limiting population size, habitat trends, and invasive species management. Some populations are of particular conservation concern and further research on the impact of low effective population size is recommended. Research to understand the impact of warming waters (climate change and El Niño) on individual algae species, along with other factors affecting algae community composition and iguana foraging dynamics, is recommended (Shepherd and Hawks 2005, Vinueza et al. 2006, Tomkins and Wolff 2017). An increased understanding of the effect of widespread oceanic pollution, including oil spills and micro-plastics, on Marine Iguanas and their micro-biota (which enable effective digestion) is also needed. Plastic debris ranks as one of the most abundant and persistent solid wastes at sea and shorelines, representing 25% of the total marine debris collected during beach cleanups in the Galápagos (Alava et al. 2014). Improved biosecurity measures to prevent disease introductions, such as West Nile Virus, avian malaria, and other are also recommended. Ongoing monitoring for introduced pathogens in Galápagos reptiles and other fauna is needed (Bataille et al. 2009; Eastwood et al. 2013, 2014).",
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Lycodon rufozonatus",
+    "Lycodon rufozonatus":{
       "name":"Red Large-toothed Snake",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"There is ranching of this species in Zhejiang Province, China, using animals hatched from wild-collected eggs. The China Wildlife Conservation Association, WildAid (2006) reported consumption of this species as food in China, but no data on quantities involved. He and Peng (1999) estimated that the annual sale of this species in Guangzhou is 31.8 tons. Zhou and Jiang (2004) reported that 11,789 live snakes and 20,000 skins of this species were exported from China between 1990 and 2000. The CITES workshop on snakes in 2011 reported that consumption of snakes in China has declined since 2004. It is used in traditional medicine in China.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is present in many protected areas. It is listed in category 3 of the Red Data Book of the Russian Federation due to its rarity in this country (Ananjeva <em>et al.</em> 2006). The population of&#160;<em>Lycodon rufozonatus walli </em>in Miyakojima Islands is considered a Threatened Local Population in the Japanese Red Data Book (Ota 2014), and in Miyakojima and Irabujima Islands this species&#160;is&#160;protected and collection is prohibited&#160;<span class=\"MsoCommentReference\">under a local regulation in Miyakojima city. More information is needed on this species' population status, natural history and threats. There is a need to monitor trade and its impact on the species.",
-      "realm":"Indomalayan|Palearctic"
+      "realm":"Indomalayan|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Pareas carinatus",
+    "Pareas carinatus":{
       "name":"Keeled Slug-eating Snake",
       "rarity":"5",
       "populationTrend":"Decreasing",
       "useTrade":"There are no reports of this species being utilized.",
       "systems":"Terrestrial",
       "conservativeActions":"No conservation measures are required. It probably occurs in a number of protected areas within its range and has been observed in Kep National Park, Cambodia (P. Bowles, unpubl. data), although evidence of illegal logging is widespread in this reserve. The generic status of this species warrants reexamination.",
-      "realm":"Indomalayan|Palearctic"
+      "realm":"Indomalayan|Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Hemidactylus bowringii",
+    "Hemidactylus bowringii":{
       "name":"Bowring's Smooth Gecko",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species appears to occur in small numbers in the international pet trade, but the species' complex taxonomic history may confound identification of these individuals. It is used in traditional medicine in some parts of southern China.<br/><br/>CN：在中国南方某些地区被用于中药中",
       "systems":"Terrestrial",
       "conservativeActions":"This species is found in multiple protected areas. It is listed in the \"List of Beneficial or of Important Economic or Scientific Value Terrestrial Wild Animals under States Protection\", under the protection of the \"Law of the People's Republic of China on the Protection of Wildlife\" (B. Cai pers. comm. 2018). Further taxonomic research is needed to fully resolve the systematics of this species.<br/><br/>CN：被列入了《国家保护的有益的或者有重要经济、科学研究价值的陆生野生动物名录》（简称“三有名录”），受《中华人民共和国野生动物保护法》一般保护<p><span lang=\"EN-US\"></p>",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Dipsosaurus dorsalis",
+    "Dipsosaurus dorsalis":{
       "name":"Common Desert Iguana",
       "rarity":"5",
       "populationTrend":"Unknown",
       "useTrade":"<p>There is very limited pet trade data from Mexico and the United States. There is documented international trade with unknown effects on the population size (Williams 2017).</p>",
       "systems":"Terrestrial",
       "conservativeActions":"Desert Iguanas are not protected by either United States or Mexican Law. They are found in protected areas in the United States, as well as the Gulf of California. Specifically, its range extends into several national parks and monuments, and federal wilderness areas (e.g., Mojave National Park, Joshua Tree National Monument, Anza Borrego Desert State Park, Kofa National Wildlife Refuge, Organ Pipe Cactus National Monument, Cabeza Prieta Wilderness, and Ironwood Forest National Monument). In Mexico, parts of the lizard's range is in the Bahía de Loreto National Park and the Área de Protección de Flora y Fauna Islas del Golfo de California which confers federal protection. The island populations are also included in the Gulf of California regional management plan for the protection of flora and fauna (Carabias Lillo <em>et al</em>. 2000), as well as a management plan for the Bahia de Loreto National Park (Bermúdez-Almada <em>et al</em>. 2002).<br/><br/>More research is needed concerning population sizes and trends, as well as threat assessment throughout the range. Particular regard should be given to the two different clades within the genus, as threats and protective areas vary spatially. Conservation measures may thus be relevant for subpopulations of the Desert Iguana.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Emoia caeruleocauda",
+    "Emoia caeruleocauda":{
       "name":"Pacific Bluetail Skink",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"There is no trade or use of this species.",
       "systems":"Terrestrial",
       "conservativeActions":"In view of its wide range it is probably found in many protected areas in the Pacific. Generally no research actions are required for this species. In the Philippines this species remains poorly known, with further research needed into the distribution, taxonomy, status and ecology.",
-      "realm":"Australasian|Indomalayan|Oceanian"
+      "realm":"Australasian|Indomalayan|Oceanian",
+      "arCode":"https://console.echoar.xyz/query?key=shy-voice-0702&file=f565a538-9789-4364-9ebc-fc4a60d5307d",
+      "arPicName":"pacificBluetailSkinkQR"
     },
-    {
-      "species":"Emoia nigra",
+    "Emoia nigra":{
       "name":"Black Emo Skink",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"Animals have been recorded in the pet trade. In Vanuatu smugglers have been caught with this species.",
       "systems":"Terrestrial",
       "conservativeActions":"It is presumably present in some protected areas. There is a need for further research into the predation of this species by cats and mongooses.",
-      "realm":"Australasian|Oceanian"
+      "realm":"Australasian|Oceanian",
+      "arCode":""
     },
-    {
-      "species":"Candoia aspera",
+    "Candoia aspera":{
       "name":"New Guinea Ground Boa",
       "rarity":"5",
       "populationTrend":"Stable",
-      "useTrade":"This species is found in the pet trade and populations from Indonesia are subject to CITES quotas.<br/><br/>Yuwono (1998) recorded the trade of this species from Indonesian New Guinea, and reported that thousands of specimens could be collected if required.<br/><br/>Natusch and Lyons (2012) noted the trade of this species from Jayapura and the Vogelkop in Indonesian New Guinea. Fifteen and forty-four individuals respectively were&#160;recorded at wildlife traders between September 2010 – April 2011. The export quota for this species in 2015 was 1,170 animals from Indonesian New Guinea. There is no quota for Papua New Guinea, from which export is banned.<p><br/></p>",
+      "useTrade":"This species is found in the pet trade and populations from Indonesia are subject to CITES quotas.Yuwono (1998) recorded the trade of this species from Indonesian New Guinea, and reported that thousands of specimens could be collected if required.Natusch and Lyons (2012) noted the trade of this species from Jayapura and the Vogelkop in Indonesian New Guinea. Fifteen and forty-four individuals respectively wererecorded at wildlife traders between September 2010 – April 2011. The export quota for this species in 2015 was 1,170 animals from Indonesian New Guinea. There is no quota for Papua New Guinea, from which export is banned.",
       "systems":"Terrestrial",
-      "conservativeActions":"<p>This species is listed under Appendix II&#160;of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)<span lang=\"EN-GB\">.&#160;This snake has protected status in Papua New Guinea but not in Indonesia (Natusch and Lyons 2012). This species occurs in many protected areas in&#160;New Guinea<span lang=\"EN-GB\">. Monitoring this species harvest and trade levels is recommended.</span></p>",
-      "realm":"Australasian"
+      "conservativeActions":"This species is listed under Appendix IIof the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES).This snake has protected status in Papua New Guinea but not in Indonesia (Natusch and Lyons 2012). This species occurs in many protected areas inNew Guinea. Monitoring this species harvest and trade levels is recommended.",
+      "realm":"Australasian",
+      "arCode":""
     },
-    {
-      "species":"Gehyra oceanica",
+    "Gehyra oceanica":{
       "name":"Oceania Gecko",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"There is no trade or use information for this species.",
       "systems":"Terrestrial",
       "conservativeActions":"There are no specific conservation measures in place for this species. This species is likely to occur in multiple protected areas in New Guinea, Bismarck Archipelago, Admiralty islands and north Solomon islands. Further research into this species' taxonomy is required.",
-      "realm":"Australasian|Oceanian"
+      "realm":"Australasian|Oceanian",
+      "arCode":""
     },
-    {
-      "species":"Anolis cristatellus",
+    "Anolis cristatellus":{
       "name":"Puerto Rico Crested Anole",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This is a relatively common species in the international pet trade.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is found in many protected areas. No other species-specific conservation measures are needed.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Anolis capito",
+    "Anolis capito":{
       "name":"Pug-nosed Anole",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is not utilized or traded to any significant degree.",
       "systems":"Terrestrial",
       "conservativeActions":"This species occurs in several protected areas.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Gonatodes albogularis",
+    "Gonatodes albogularis":{
       "name":"Yellow-headed Gecko",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is traded to a small degree.",
       "systems":"Terrestrial",
       "conservativeActions":"Currently, this species is of relatively low conservation concern and does not require significant additional protection or major management, monitoring, or conservation research action. This species is protected by Mexican law under the category Pr (Special Protection). It occurs in several protected areas.",
-      "realm":"Neotropical"
+      "realm":"Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Leptophis mexicanus",
+    "Leptophis mexicanus":{
       "name":"Mexican Parrot Snake",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is not utilized or traded to any significant degree.",
       "systems":"Terrestrial",
       "conservativeActions":"Currently, this species is of relatively low conservation concern and does not require significant additional protection or major management, monitoring, or research action. This species is protected by Mexican law under the category A (Threatened). It occurs in several protected areas throughout its range.",
-      "realm":"Nearctic|Neotropical"
+      "realm":"Nearctic|Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Thamnophis proximus",
+    "Thamnophis proximus":{
       "name":"Western ribbon snake",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is not utilized or traded to any significant degree.",
       "systems":"Terrestrial|Freshwater (=Inland waters)",
       "conservativeActions":"Currently, this species is of relatively low conservation concern and does not require significant additional protection or major management, monitoring, or research action. It is present in several protected areas.",
-      "realm":"Nearctic|Neotropical"
+      "realm":"Nearctic|Neotropical",
+      "arCode":""
     },
-    {
-      "species":"Trapelus flavimaculatus",
+    "Trapelus flavimaculatus":{
       "name":"Yellow-spotted Agama",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is not collected.",
       "systems":"Terrestrial",
       "conservativeActions":"It is present in many protected areas. No additional conservation measures are needed.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Echis omanensis",
+    "Echis omanensis":{
       "name":"Oman Saw-scaled Viper",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"There is a very limited trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"It is present in some protected areas. Further studies are needed into the distribution, abundance, natural history, and threats to this little-known species.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Asaccus gallagheri",
+    "Asaccus gallagheri":{
       "name":"Gallagher's Gecko",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"This species is not traded.",
       "systems":"Terrestrial",
       "conservativeActions":"This species is present in some protected areas. Further studies are needed into the distribution, abundance, natural history, and threats to this little-known species.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Pristurus carteri",
+    "Pristurus carteri":{
       "name":"Carter's Semaphore Gecko",
       "rarity":"5",
       "populationTrend":"Unknown",
       "useTrade":"These geckos fetch high prices in Europe and the United States (T. Wilms pers. comm. February 2012), and there is also demand in Japan (S. F. Mohammed pers. comm. February 2012). Export is presently banned from Oman. The animals are hard to keep and breed in captivity, and individuals occasionally found at reptile fairs are presumed to be illegally collected (T. Wilms pers. comm. February 2012&#160;).",
       "systems":"Terrestrial",
       "conservativeActions":"It is known to occur in several protected areas in Oman. Export of this lizard from Oman is banned. No other conservation measures are required.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Pristurus minimus",
+    "Pristurus minimus":{
       "name":"Arnold's Rock Gecko",
       "rarity":"5",
       "populationTrend":"Unknown",
       "useTrade":"There is no use or trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"This species has been recorded in the Ras al Hadd protected area in Oman.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Ptyas herminae",
+    "Ptyas herminae":{
       "name":"Sakishima Green Snake",
       "rarity":"5",
       "populationTrend":"Unknown",
       "useTrade":"There is no known use of or trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"<p>The distribution range except for a part of Ishigaki Island corresponds with a national park, although there is clearly a need for improved protection of forest habitats in these islands. <span class=\"MsoCommentReference\">More information is needed on this species' population status, natural history and threats.<span class=\"MsoCommentReference\"></span></p>",
-      "realm":"Indomalayan"
+      "realm":"Indomalayan",
+      "arCode":""
     },
-    {
-      "species":"Lacerta strigata",
+    "Lacerta strigata":{
       "name":"Caucasus emerald lizard",
       "rarity":"5",
       "populationTrend":"Decreasing",
       "useTrade":"",
       "systems":"Terrestrial",
       "conservativeActions":"This species occurs in numerous protected areas. Other than general research activities, no direct conservation measures are currently needed for the species as a whole.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     },
-    {
-      "species":"Stenodactylus slevini",
+    "Stenodactylus slevini":{
       "name":"Slevin's Sand Gecko",
       "rarity":"5",
       "populationTrend":"Stable",
       "useTrade":"There appears to be no trade in this species.",
       "systems":"Terrestrial",
       "conservativeActions":"Populations occurs in several protected areas. There are no direct conservation measures currently needed for this species as a whole.",
-      "realm":"Palearctic"
+      "realm":"Palearctic",
+      "arCode":""
     }
-  ]
+  }

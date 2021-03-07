@@ -4,6 +4,11 @@ import Button from './Button'
 import { Price } from './Header'
 import { RARITY, RARITY_FULL } from '../constants'
 import CardBack from '../assets/backing.png'
+import cardData from '../assets/card-data.json'
+import floreanaGiantTortoiseQR from '../qr_codes/Floreana_Giant_Tortoise_QR.png'
+import mitchellsWaterMonitorQR from "../qr_codes/Mitchell's_Water_Monitor_QR.png"
+import pacificBluetailSkinkQR from '../qr_codes/Pacific_Bluetail_Skink_QR.png'
+import rubyEyedGreenPitviperQR from "../qr_codes/Ruby-eyed_Green_Pitviper_QR.png"
 
 const Container = styled.div`
     width: 100vw;
@@ -28,6 +33,18 @@ const StyledImg = styled.img`
     object-fit: cover;
     box-shadow: 2px 2px 15px #e3e2e1;
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 300;
+`
+const QrImg = styled.img`
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0);
+    bottom: 4px;
+    right: 4px;
+    width: 75px;
+    height: 75px;
+    margin: 1em
+    object-fit: cover;
     overflow: hidden;
     z-index: 300;
 `
@@ -139,6 +156,20 @@ const Name = styled.h2`
     padding: 0 15px;
 `
 
+const ConservativeActions = styled.p`
+    width: 570px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    padding: 0 30px 10px 30px;
+`
+
+const ConservativeActionsTitle = styled.h4`
+    width: 570px;
+    box-sizing: border-box;
+    padding: 0 4px;
+    font-size: 16px;
+`
+
 const Serial = styled.div`
     font-size: 10px;
     position: absolute;
@@ -146,6 +177,14 @@ const Serial = styled.div`
     right: 1.2em;
     color: #ccc;
 `
+
+const qrImageMap = {
+    "floreanaGiantTortoiseQR": floreanaGiantTortoiseQR,
+    "mitchellsWaterMonitor": mitchellsWaterMonitorQR,
+    "pacificBluetailSkinkQR": pacificBluetailSkinkQR,
+    "rubyEyedGreenPitviperQR": rubyEyedGreenPitviperQR
+}
+
 const listReptile = (tokenId, salePrice) => {
     window.reptileContract.methods
         .setForSale(tokenId, salePrice)
@@ -200,7 +239,20 @@ const ViewCard = ({ setViewCard, item }) => {
                     <Name>{item.name}</Name>
                     {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
                     <br/>
+                    Population Trend: {cardData[item.species].populationTrend}
                     <br/>
+                    Systems: {cardData[item.species].systems}
+                    <br/>
+                    Realm: {cardData[item.species].realm}
+                    <br/>
+                    <br/>
+                    {
+                        cardData[item.species].conservativeActions !== "" && 
+                        <> 
+                            <ConservativeActionsTitle>Conservative Actions</ConservativeActionsTitle>
+                            <ConservativeActions>{cardData[item.species].conservativeActions}</ConservativeActions>
+                        </>
+                    }
                     {
                         !item.id && item.id !== 0 && <Button onClick={adopt}>Adopt</Button>
                     }
@@ -211,6 +263,11 @@ const ViewCard = ({ setViewCard, item }) => {
                             <br/>
                             <Button onClick={adopt}>Buy</Button>
                         </>
+                    }
+                    {
+                        cardData[item.species].arPicName &&
+                        <QrImg src={qrImageMap[cardData[item.species].arPicName]} alt={item.name + " QR code"} />
+
                     }
                     {
                         item.wanttosell && <div>
