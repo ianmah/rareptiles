@@ -42,6 +42,16 @@ const Header = styled.div`
     padding: 1.5em;
 `
 
+const Legend = styled.ul`
+    position: absolute;
+    bottom: 1em;
+    font-size: 12px;
+    padding-left: 1.6em;
+    li {
+        list-style-type: none;
+    }
+`
+
 const Sidebar = ({ activePage, setActivePage }) => {
 
     return (
@@ -53,6 +63,14 @@ const Sidebar = ({ activePage, setActivePage }) => {
             <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
             <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
             <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>
+            <Legend>
+                <li>MEX: Extinct</li>
+                <li>EX: Extinct in the Wild</li>
+                <li>CR: Critically Endangered</li>
+                <li>EN: Endangered</li>
+                <li>VU: Vulnerable</li>
+                <li>CO: Common</li>
+            </Legend>
         </StyledSidebar>
     )
 

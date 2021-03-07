@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import Button from './Button'
 import { Title, Price } from './Header'
 import { RARITY, ASSESSMENT_RARITY } from '../constants'
-
+/* global BigInt */
 const StyledCard = styled.div`
     background: #fff;
     width: 300px;
-    height: 400px;
+    height: 410px;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -81,10 +81,12 @@ const listReptile = (tokenId, salePrice) => {
         })
 }
 
-const buyReptile = (tokenId) => {
+const buyReptile = (tokenId, salePrice) => {
+    const amountToPay = window.web3.utils.toWei(salePrice.toString(), 'ether')
+
     window.reptileContract.methods
         .buy(tokenId)
-        .send({ from: window.account })
+        .send({ from: window.account, to: window.reptileContract.address, value: amountToPay })
         .once('receipt', receipt => {
             console.log('Buy complete', receipt)
         })
@@ -104,7 +106,7 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
     }
 
     const buy = () => {
-        buyReptile(id)
+        buyReptile(id, item.salePrice)
     }
 
     return (

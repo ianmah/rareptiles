@@ -4,7 +4,7 @@ export const RARITY = {
     2: "CR",
     3: "EN",
     4: "VU",
-    5: "LC"
+    5: "CO"
 }
 
 export const RARITY_FULL = {
@@ -13,7 +13,7 @@ export const RARITY_FULL = {
     2: "Critically Endangered",
     3: "Endangered",
     4: "Vulnerable",
-    5: "Not Endangered"
+    5: "Common"
 }
 
 export const ASSESSMENT_RARITY = {
