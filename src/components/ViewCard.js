@@ -244,8 +244,6 @@ const ViewCard = ({ setViewCard, item }) => {
                     Systems: {cardData[item.species].systems}
                     <br/>
                     Realm: {cardData[item.species].realm}
-                    <br/>
-                    <br/>
                     {
                         cardData[item.species].conservativeActions !== "" && 
                         <> 
