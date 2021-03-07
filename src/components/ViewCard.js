@@ -73,9 +73,33 @@ const Serial = styled.div`
     right: 1.2em;
     color: #ccc;
 `
+const listReptile = (tokenId, salePrice) => {
+    window.reptileContract.methods
+        .setForSale(tokenId, salePrice)
+        .send({ from: window.account })
+        .once('receipt', receipt => {
+            console.log('Listing complete', receipt)
+        })
+}
 
 const ViewCard = ({ setViewCard, item }) => {
     const {species, name, uri, rarity} = item
+    const [sellAmount, setSellAmount] = useState('')
+    const [sellWindow, setSellWindow] = useState(false)
+
+    const sellSomething = () => {
+        setSellWindow(true)
+    }
+
+    const confirmSell = () => {
+        const numSell = parseInt(sellAmount)
+        if (numSell) {
+            console.log('yee')
+            listReptile(item.id, numSell) // Change later
+        }
+
+    }
+
     const adopt = () => {
         window.reptileContract.methods
             .mint(species, name, uri, rarity)
@@ -106,6 +130,15 @@ const ViewCard = ({ setViewCard, item }) => {
                     }
                     {
                         item.forSale && <Button onClick={adopt}>Buy</Button>
+                    }
+                    {
+                        item.wanttosell && <div>
+                        Enter the amount you want to sell for:
+                        <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                        <br/>
+                        <Button onClick={confirmSell}>Confirm</Button>
+                        </div>
+                        
                     }
                 </StyledCard>
             </Content>

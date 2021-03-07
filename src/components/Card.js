@@ -92,21 +92,6 @@ const buyReptile = (tokenId) => {
 
 const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ...props }) => {
     const {species, name, id, uri, rarity} = item
-    const [sellAmount, setSellAmount] = useState('')
-    const [sellWindow, setSellWindow] = useState(false)
-
-    const sellSomething = () => {
-        setSellWindow(true)
-    }
-
-    const confirmSell = () => {
-        const numSell = parseInt(sellAmount)
-        if (numSell) {
-            console.log('yee')
-            listReptile(id, numSell) // Change later
-        }
-
-    }
 
     const adopt = (item) => {
         window.reptileContract.methods
@@ -135,15 +120,9 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
                 <Serial>
                     {id && `#${id}`} 
                 </Serial>
-                {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
+                {!isShelter && !isMarket && <CTA>Sell</CTA>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
-                {sellWindow && <div>
-                    Enter the amount you want to sell for:
-                    <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                    <br/>
-                    <CTA onClick={confirmSell}>Confirm</CTA>
-                    </div>
-                }
+                
                 {
                     isMarket && <>
                     Price: {item.salePrice}

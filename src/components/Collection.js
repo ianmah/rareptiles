@@ -55,7 +55,20 @@ const Collection = ({ contract, isMarket, setViewCard }) => {
             <Header>{isMarket ? "Marketplace" : "Collection"}</Header>
             <StyledCollection>
             {
-                Object.values(collection).map(item => <Card key={item.id} onClick={() => setViewCard(item)} isMarket={isMarket} item={item} />)
+                Object.values(collection).map(item =>
+                    <Card
+                        key={item.id}
+                        onClick={() => {
+                            if (!isMarket) {
+                                setViewCard({...item, wanttosell: true})
+                            } else {
+                                setViewCard(item)
+                            }
+                        }}
+                        isMarket={isMarket}
+                        item={item}
+                    />
+                )
             }
             </StyledCollection>
         </CollectionContainer>
