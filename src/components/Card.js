@@ -27,6 +27,17 @@ const StyledImg = styled.img`
     object-fit: cover;
 `
 
+const Shine = styled.div`
+    width: 300px;
+    height: 300px;
+    margin-top: -300px;
+    z-index: 600;
+    animation: shiny 7s linear infinite;
+    transform: translateY(0);
+    background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
+    background-repeat: no-repeat;
+`
+
 const ContentWrapper = styled.div`
     padding: 10px 16px 16px 16px;
     p {
@@ -115,6 +126,7 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
         <StyledCard {...props}>
             <Label>{RARITY[rarity]}</Label>
             <StyledImg src={uri} alt={name} />
+            { rarity < 2 && <Shine />}
             <ContentWrapper>
                 <Title>{name}</Title>
                 <Description>

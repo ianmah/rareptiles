@@ -40,20 +40,6 @@ const Shine = styled.div`
     transform: translateY(0);
     background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
     background-repeat: no-repeat;
-
-    @keyframes shiny {
-      0%{
-        background-position: -800px 0;
-      }
-      30%{
-        opacity: 0;
-        background-position: 1800px 0; 
-      }    
-      100%{
-        opacity: 0;
-        background-position: 1800px 0; 
-      }  
-    }
 `
 
 const StyledButton = styled(Button)`
