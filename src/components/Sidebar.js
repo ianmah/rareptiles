@@ -17,11 +17,11 @@ const MenuItem = styled.a`
     display: block;
     transition: all 200ms ease;
     &:hover {
-        background: #fff4de;
+        background: #fadede;
         cursor: pointer;
     }
     font-weight: bold;
-    ${p => p.active ? 'border-left: #ffbb78 6px solid;' : 'border-left: #ffbb78 0px solid;'}
+    ${p => p.active ? 'border-left: #de4e4e 6px solid;' : 'border-left: #de4e4e 0px solid;'}
 `
 
 const Sidebar = ({ activePage, setActivePage }) => {

@@ -15,7 +15,7 @@ const StyledCard = styled.div`
     position: relative;
     transition: all 200ms ease;
     &:hover {
-        box-shadow: 0 0 0 3px #f5971d;
+        box-shadow: 0 0 0 3px #912216;
         animation: spin2 4s ease infinite;
     }
 `
@@ -29,10 +29,10 @@ const StyledImg = styled.img`
 
 const Shine = styled.div`
     width: 300px;
-    height: 300px;
-    margin-top: -300px;
+    height: 250px;
+    margin-top: -250px;
     z-index: 600;
-    animation: shiny 7s linear infinite;
+    animation: shiny 6s linear infinite;
     transform: translateY(0);
     background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ const Label = styled.div`
     font-family: 'Shapiro';
     position: absolute;
     color: white;
-    text-shadow: 0 0 6px red;
+    text-shadow: -2px 2px 2px #bd2d2d;
     top: 0.75em;
     left: 1em;
     font-size: 16px;
