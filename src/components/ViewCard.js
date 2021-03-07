@@ -180,7 +180,7 @@ const Serial = styled.div`
 
 const qrImageMap = {
     "floreanaGiantTortoiseQR": floreanaGiantTortoiseQR,
-    "mitchellsWaterMonitor": mitchellsWaterMonitorQR,
+    "mitchellsWaterMonitorQR": mitchellsWaterMonitorQR,
     "pacificBluetailSkinkQR": pacificBluetailSkinkQR,
     "rubyEyedGreenPitviperQR": rubyEyedGreenPitviperQR
 }
