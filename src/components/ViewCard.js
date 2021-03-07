@@ -21,7 +21,7 @@ const Content = styled.div`
 
 const StyledImg = styled.img`
     animation: spin 4s ease infinite;
-    width: 400px;
+    width: 500px;
     height: 450px;
     margin: 2em;
     object-fit: cover;
@@ -49,14 +49,15 @@ const StyledButton = styled(Button)`
 
 const StyledCard = styled.div`
     background: #fff;
-    width: 550px;
-    height: 730px;
+    width: 570px;
+    min-height: 730px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
     margin: 5em auto;
     overflow: hidden;
     position: relative;
+    padding-bottom: 2em;
 `
 const Name = styled.h2`
     font-family: 'Shapiro';
@@ -64,7 +65,7 @@ const Name = styled.h2`
     text-transform: uppercase;
     margin: 0;
     margin-top: -20px;
-    padding: 0 10px;
+    padding: 0 15px;
 `
 
 const Serial = styled.div`
