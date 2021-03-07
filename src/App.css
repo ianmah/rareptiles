@@ -22,3 +22,16 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes spin {
+  0%{
+     transform: rotateX(-6deg) rotateY(-20deg);
+  }
+  50%{
+      transform: rotateX(-6deg) rotateY(20deg);
+  }
+  100%{
+     transform: rotateX(-6deg) rotateY(-20deg);
+  }
+}

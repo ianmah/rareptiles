@@ -16,13 +16,17 @@ const Container = styled.div`
 const Content = styled.div`
     margin: auto;
     text-align: center;
+    overflow: hidden;
 `
 
 const StyledImg = styled.img`
-    width: 550px;
-    height: 500px;
+    animation: spin 4s ease infinite;
+    width: 400px;
+    height: 450px;
+    margin: 2em;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 15px #e3e2e1;
+    border-radius: 10px;
 `
 
 const StyledButton = styled(Button)`
@@ -38,6 +42,7 @@ const StyledCard = styled.div`
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
     margin: 2em auto;
+    overflow: hidden;
 `
 
 const ViewCard = ({ setViewCard, item }) => {
