@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Button from './Button'
 import { Price } from './Header'
 import { RARITY, RARITY_FULL } from '../constants'
+import CardBack from '../assets/backing.png'
 import cardData from '../assets/card-data.json'
 import floreanaGiantTortoiseQR from '../qr_codes/Floreana_Giant_Tortoise_QR.png'
 import mitchellsWaterMonitorQR from "../qr_codes/Mitchell's_Water_Monitor_QR.png"
@@ -48,20 +49,90 @@ const QrImg = styled.img`
     z-index: 300;
 `
 
+const CardAnim = styled.div`
+    position: relative;
+    margin-top: 3em;
+    .back {
+        margin-top: -89%;
+        opacity: 0;
+    }
+
+    &:hover {
+        .back {
+            animation: rotato 2.2s linear 1;
+        }
+        .front {
+            animation: frontrotato 2.2s linear 1;
+        }
+    }
+
+    @keyframes frontrotato {
+        0%{
+            transform: rotateY(0);
+        }
+        23%{
+            opacity: 100;
+        }
+        25%{
+            transform: rotateY(90deg);
+        }
+        75%{
+            opacity: 0;
+            transform: rotateY(90deg);
+        }
+        76%{            
+            opacity: 100;
+        }
+        100%{
+            transform: rotateY(0);
+        }
+
+    }
+
+    @keyframes rotato {
+        0%{
+            transform: rotateY(0);
+        }
+        23%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 100;
+            transform: rotateY(90deg);
+        }
+        50%{
+            transform: rotateY(0);
+        }
+        75%{
+            opacity: 100;
+            transform: rotateY(90deg);
+        }
+        76%{
+            opacity: 0;
+        }
+        100%{
+            transform: rotateY(0);
+        }
+    }
+`
+
 const Shine = styled.div`
     width: 600px;
     height: 500px;
     margin-top: -500px;
     z-index: 600;
-    animation: shiny 4s linear infinite;
+    animation: shiny 3s linear infinite;
     transform: translateY(0);
     background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
     background-repeat: no-repeat;
 `
 
 const StyledButton = styled(Button)`
-    float: right;
-    margin: 0.5em;
+    position: absolute;
+    top: 0.75em;
+    right: 0.75em;
+    transform: translateY(0);
+    z-index: 1000;
 `
 
 const StyledCard = styled.div`
@@ -150,12 +221,20 @@ const ViewCard = ({ setViewCard, item }) => {
         <Container>
             <Content>
                 <StyledCard>
+                    <CardAnim>
+                        <div className="front">
+                            <StyledImg src={item.uri} alt={item.name} />
+                            <Shine/>
+                        </div>
+                        <div className="back">
+                            <StyledImg src={CardBack} alt={item.name} />
+                            <Shine/>
+                        </div>
+                    </CardAnim>
+                    <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
                     <Serial>
                         {item.id && `#${item.id}`} 
                     </Serial>
-                    <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
-                    <StyledImg src={item.uri} alt={item.name} />
-                    <Shine/>
                     <br/>
                     <Name>{item.name}</Name>
                     {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
@@ -165,8 +244,6 @@ const ViewCard = ({ setViewCard, item }) => {
                     Systems: {cardData[item.species].systems}
                     <br/>
                     Realm: {cardData[item.species].realm}
-                    <br/>
-                    <br/>
                     {
                         cardData[item.species].conservativeActions !== "" && 
                         <> 

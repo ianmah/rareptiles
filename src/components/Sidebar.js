@@ -65,7 +65,7 @@ const StyledCards = styled(Cards)`
 
 const StyledShop = styled.img`
     margin-right: 8px;
-    margin-left: -7px;
+    margin-left: -3px;
     width: 20px;
 `
 
