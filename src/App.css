@@ -17,7 +17,7 @@ html, body {
   height: 100%;
   font-family: 'Fira Mono', monospace;
   font-size: 14px;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .App-link {
