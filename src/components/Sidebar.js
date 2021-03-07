@@ -17,11 +17,11 @@ const MenuItem = styled.a`
     display: block;
     transition: all 200ms ease;
     &:hover {
-        background: #fff4de;
+        background: #fadede;
         cursor: pointer;
     }
     font-weight: bold;
-    ${p => p.active ? 'border-left: #ffbb78 6px solid;' : 'border-left: #ffbb78 0px solid;'}
+    ${p => p.active ? 'border-left: #de4e4e 6px solid;' : 'border-left: #de4e4e 0px solid;'}
 `
 
 const Sidebar = ({ activePage, setActivePage }) => {
@@ -29,7 +29,6 @@ const Sidebar = ({ activePage, setActivePage }) => {
     return (
         <StyledSidebar>
             <h1>Rareptiles</h1>
-            <MenuItem active={activePage === 'home'} onClick={() => setActivePage('home')}>Home</MenuItem>
             <MenuItem active={activePage === 'marketplace'} onClick={() => setActivePage('marketplace')}>Marketplace</MenuItem>
             <MenuItem active={activePage === 'collection'} onClick={() => setActivePage('collection')}>Collection</MenuItem>
             <MenuItem active={activePage === 'shelter'} onClick={() => setActivePage('shelter')}>Shelter</MenuItem>

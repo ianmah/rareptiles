@@ -6,7 +6,7 @@ export const Title = styled.h3`
     text-transform: uppercase;
 `
 export const Header = styled.h2`
-    margin: 0;
+    margin: 0 0 1em 0;
     font-family: 'Shapiro';
     text-transform: uppercase;
 `

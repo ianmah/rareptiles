@@ -27,6 +27,19 @@ const StyledImg = styled.img`
     object-fit: cover;
     box-shadow: 2px 2px 15px #e3e2e1;
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 300;
+`
+
+const Shine = styled.div`
+    width: 600px;
+    height: 500px;
+    margin-top: -500px;
+    z-index: 600;
+    animation: shiny 4s linear infinite;
+    transform: translateY(0);
+    background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
+    background-repeat: no-repeat;
 `
 
 const StyledButton = styled(Button)`
@@ -37,16 +50,56 @@ const StyledButton = styled(Button)`
 const StyledCard = styled.div`
     background: #fff;
     width: 550px;
-    height: 700px;
+    height: 720px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
     margin: 5em auto;
     overflow: hidden;
+    position: relative;
 `
+const Name = styled.h2`
+    font-family: 'Shapiro';
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 10px;
+`
+
+const Serial = styled.div`
+    font-size: 10px;
+    position: absolute;
+    bottom: 1.2em;
+    right: 1.2em;
+    color: #ccc;
+`
+const listReptile = (tokenId, salePrice) => {
+    window.reptileContract.methods
+        .setForSale(tokenId, salePrice)
+        .send({ from: window.account })
+        .once('receipt', receipt => {
+            console.log('Listing complete', receipt)
+        })
+}
 
 const ViewCard = ({ setViewCard, item }) => {
     const {species, name, uri, rarity} = item
+    const [sellAmount, setSellAmount] = useState('')
+    const [sellWindow, setSellWindow] = useState(false)
+
+    const sellSomething = () => {
+        setSellWindow(true)
+    }
+
+    const confirmSell = () => {
+        const numSell = parseInt(sellAmount)
+        if (numSell) {
+            console.log('yee')
+            listReptile(item.id, numSell) // Change later
+        }
+
+    }
+
     const adopt = () => {
         window.reptileContract.methods
             .mint(species, name, uri, rarity)
@@ -61,14 +114,32 @@ const ViewCard = ({ setViewCard, item }) => {
         <Container>
             <Content>
                 <StyledCard>
+                    <Serial>
+                        {item.id && `#${item.id}`} 
+                    </Serial>
                     <StyledButton onClick={() => setViewCard()} >Close</StyledButton>
                     <StyledImg src={item.uri} alt={item.name} />
+                    <Shine/>
                     <br/>
-                    <Title>{item.name}</Title>
+                    <Name>{item.name}</Name>
                     {RARITY[item.rarity]}: {RARITY_FULL[item.rarity]}
                     <br/>
                     <br/>
-                    <Button onClick={adopt}>Adopt</Button>
+                    {
+                        !item.id && <Button onClick={adopt}>Adopt</Button>
+                    }
+                    {
+                        item.forSale && <Button onClick={adopt}>Buy</Button>
+                    }
+                    {
+                        item.wanttosell && <div>
+                        Enter the amount you want to sell for:
+                        <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
+                        <br/>
+                        <Button onClick={confirmSell}>Confirm</Button>
+                        </div>
+                        
+                    }
                 </StyledCard>
             </Content>
         </Container>

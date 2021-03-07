@@ -13,7 +13,7 @@ const StyledCollection = styled.div`
     display: flex;
 `
 
-const Collection = ({ contract, isMarket }) => {
+const Collection = ({ contract, isMarket, setViewCard }) => {
     const [collection, setCollection] = useState({})
 
     useEffect(() => {
@@ -55,7 +55,20 @@ const Collection = ({ contract, isMarket }) => {
             <Header>{isMarket ? "Marketplace" : "Collection"}</Header>
             <StyledCollection>
             {
-                Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} item={item} />)
+                Object.values(collection).map(item =>
+                    <Card
+                        key={item.id}
+                        onClick={() => {
+                            if (!isMarket) {
+                                setViewCard({...item, wanttosell: true})
+                            } else {
+                                setViewCard(item)
+                            }
+                        }}
+                        isMarket={isMarket}
+                        item={item}
+                    />
+                )
             }
             </StyledCollection>
         </CollectionContainer>

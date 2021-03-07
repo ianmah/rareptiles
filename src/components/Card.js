@@ -15,7 +15,7 @@ const StyledCard = styled.div`
     position: relative;
     transition: all 200ms ease;
     &:hover {
-        box-shadow: 0 0 0 3px #f5971d;
+        box-shadow: 0 0 0 3px #912216;
         animation: spin2 4s ease infinite;
     }
 `
@@ -26,8 +26,20 @@ const StyledImg = styled.img`
     height: 60%;
     object-fit: cover;
 `
+
+const Shine = styled.div`
+    width: 300px;
+    height: 250px;
+    margin-top: -250px;
+    z-index: 600;
+    animation: shiny 6s linear infinite;
+    transform: translateY(0);
+    background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
+    background-repeat: no-repeat;
+`
+
 const ContentWrapper = styled.div`
-    padding: 16px;
+    padding: 10px 16px 16px 16px;
     p {
       color: #555;
     }
@@ -46,10 +58,18 @@ const Label = styled.div`
     font-family: 'Shapiro';
     position: absolute;
     color: white;
-    text-shadow: 0 0 6px red;
+    text-shadow: -2px 2px 2px #bd2d2d;
     top: 0.75em;
     left: 1em;
     font-size: 16px;
+`
+
+const Serial = styled.div`
+    font-size: 10px;
+    position: absolute;
+    bottom: 1.2em;
+    right: 1.2em;
+    color: #ccc;
 `
 
 const listReptile = (tokenId, salePrice) => {
@@ -72,21 +92,6 @@ const buyReptile = (tokenId) => {
 
 const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ...props }) => {
     const {species, name, id, uri, rarity} = item
-    const [sellAmount, setSellAmount] = useState('')
-    const [sellWindow, setSellWindow] = useState(false)
-
-    const sellSomething = () => {
-        setSellWindow(true)
-    }
-
-    const confirmSell = () => {
-        const numSell = parseInt(sellAmount)
-        if (numSell) {
-            console.log('yee')
-            listReptile(id, numSell) // Change later
-        }
-
-    }
 
     const adopt = (item) => {
         window.reptileContract.methods
@@ -106,19 +111,18 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
         <StyledCard {...props}>
             <Label>{RARITY[rarity]}</Label>
             <StyledImg src={uri} alt={name} />
+            { rarity < 2 && <Shine />}
             <ContentWrapper>
-              <Title>{name}</Title>
+                <Title>{name}</Title>
                 <Description>
-                    {species} {id && `#${id}`} 
+                    {species}
                 </Description>
-                {!isShelter && !isMarket && <CTA onClick={sellSomething}>Sell</CTA>}
+                <Serial>
+                    {id && `#${id}`} 
+                </Serial>
+                {!isShelter && !isMarket && <CTA>Sell</CTA>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
-                {sellWindow && <div>
-                    Enter the amount you want to sell for:
-                    <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
-                    <CTA onClick={confirmSell}>Confirm</CTA>
-                    </div>
-                }
+                
                 {
                     isMarket && <>
                     Price: {item.salePrice}

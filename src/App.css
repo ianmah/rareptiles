@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-  background-color: #f5f2eb;
+  background-color: #f2f2f2;
 }
 
 html, body {
@@ -40,12 +40,27 @@ html, body {
      transform: rotateX(0) rotateY(0);
   }
   25%{
-      transform: rotateX(-6deg) rotateY(-20deg);
+      transform: rotateX(-4deg) rotateY(-15deg);
   }
   50%{
-      transform: rotateX(-6deg) rotateY(20deg);
+      transform: rotateX(-4deg) rotateY(15deg);
   }
   100%{
     transform: rotateX(0) rotateY(0);
   }
+
+}
+
+@keyframes shiny {
+  0%{
+    background-position: -800px 0;
+  }
+  30%{
+    opacity: 0;
+    background-position: 1800px 0; 
+  }    
+  100%{
+    opacity: 0;
+    background-position: 1800px 0; 
+  }  
 }

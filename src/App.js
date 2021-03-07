@@ -45,12 +45,12 @@ function App() {
         }
         {activePage === 'marketplace' &&
           <>
-            <Collection contract={contracts.reptile} isMarket={true} />
+            <Collection setViewCard={setViewCard} contract={contracts.reptile} isMarket={true} />
           </>
         }
         {activePage === 'collection' &&
           <>
-            <Collection contract={contracts.reptile} />
+            <Collection setViewCard={setViewCard} contract={contracts.reptile} />
           </>
         }
         {activePage === 'shelter' &&
