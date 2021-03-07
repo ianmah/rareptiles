@@ -138,6 +138,7 @@ const ViewCard = ({ setViewCard, item }) => {
                         Sell price:
                         <input value={sellAmount} onChange={e => setSellAmount(e.target.value)} />
                         <br/>
+                        <br/>
                         <Button onClick={confirmSell}>Confirm</Button>
                         </div>
                         
