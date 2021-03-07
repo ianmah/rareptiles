@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Card from './Card'
-import { Title } from './Header'
+import { Title, Header } from './Header'
 import Search from './SearchBar'
 
 const CollectionContainer = styled.div`
@@ -52,8 +52,7 @@ const Collection = ({ contract, isMarket }) => {
 
     return (
         <CollectionContainer>
-            <Search></Search>
-            <Title>{isMarket ? "Marketplace" : "Collection"}</Title>
+            <Header>{isMarket ? "Marketplace" : "Collection"}</Header>
             <StyledCollection>
             {
                 Object.values(collection).map(item => <Card key={item.id} isMarket={isMarket} item={item} />)
