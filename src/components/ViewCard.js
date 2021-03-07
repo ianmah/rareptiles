@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import { Title } from './Header'
+import { Price } from './Header'
 import { RARITY, RARITY_FULL } from '../constants'
 
 const Container = styled.div`
@@ -50,7 +50,7 @@ const StyledButton = styled(Button)`
 const StyledCard = styled.div`
     background: #fff;
     width: 550px;
-    height: 720px;
+    height: 730px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #e3e2e1;
@@ -63,6 +63,7 @@ const Name = styled.h2`
     font-size: 26px;
     text-transform: uppercase;
     margin: 0;
+    margin-top: -20px;
     padding: 0 10px;
 `
 
@@ -129,7 +130,12 @@ const ViewCard = ({ setViewCard, item }) => {
                         !item.id && <Button onClick={adopt}>Adopt</Button>
                     }
                     {
-                        item.forSale && <Button onClick={adopt}>Buy</Button>
+                        
+                        item.forSale && <>
+                            <Price>{item.salePrice}</Price>
+                            <br/>
+                            <Button onClick={adopt}>Buy</Button>
+                        </>
                     }
                     {
                         item.wanttosell && <div>

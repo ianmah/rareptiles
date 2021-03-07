@@ -59,7 +59,7 @@ const Collection = ({ contract, isMarket, setViewCard }) => {
                     <Card
                         key={item.id}
                         onClick={() => {
-                            if (!isMarket) {
+                            if (!isMarket && !item.forSale) {
                                 setViewCard({...item, wanttosell: true})
                             } else {
                                 setViewCard(item)

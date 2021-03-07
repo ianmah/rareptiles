@@ -9,7 +9,6 @@ const StyledButton = styled.button`
   height: 2.5em;
   min-width: 8em;
   font-weight: bold;
-  margin-right: 1em;
   flex-basis: calc(50% - 20px);
   transition: all 200ms cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 3px 3px 8px #e3e2e1;

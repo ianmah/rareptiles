@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import { Title } from './Header'
+import { Title, Price } from './Header'
 import { RARITY, ASSESSMENT_RARITY } from '../constants'
 
 const StyledCard = styled.div`
@@ -120,12 +120,13 @@ const Card = ({ item, isMarket, salePrice, isShelter, setViewCard = () => {}, ..
                 <Serial>
                     {id && `#${id}`} 
                 </Serial>
-                {!isShelter && !isMarket && <CTA>Sell</CTA>}
+                {!isShelter && !isMarket && !item.forSale && <CTA>Sell</CTA>}
+                {item.forSale && !isMarket && <Price>{item.salePrice}</Price>}
                 {isShelter && <CTA onClick={() => adopt(item)}>Adopt</CTA>}
                 
                 {
                     isMarket && <>
-                    Price: {item.salePrice}
+                    <Price>{item.salePrice}</Price>
                     <br/>
                     <CTA onClick={buy}>Buy</CTA>
                     </>

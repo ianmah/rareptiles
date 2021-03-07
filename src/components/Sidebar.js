@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import logo from '../assets/reptile.png';
 
 const StyledSidebar = styled.div`
-    width: 240px;
+    width: 250px;
     float: left;
     height: 100vh;
     background: #fff;
