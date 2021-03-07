@@ -16,6 +16,7 @@ const StyledCard = styled.div`
     transition: all 200ms ease;
     &:hover {
         box-shadow: 0 0 0 3px #f5971d;
+        animation: spin2 4s ease infinite;
     }
 `
 
