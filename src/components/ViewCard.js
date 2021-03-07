@@ -112,8 +112,8 @@ const Shine = styled.div`
 
 const StyledButton = styled(Button)`
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.75em;
+    right: 0.75em;
     transform: translateY(0);
     z-index: 1000;
 `
