@@ -29,10 +29,10 @@ const StyledImg = styled.img`
 
 const Shine = styled.div`
     width: 300px;
-    height: 300px;
-    margin-top: -300px;
+    height: 250px;
+    margin-top: -250px;
     z-index: 600;
-    animation: shiny 7s linear infinite;
+    animation: shiny 6s linear infinite;
     transform: translateY(0);
     background: linear-gradient(to right, transparent 25%, #fff 50%, transparent 75%);
     background-repeat: no-repeat;
