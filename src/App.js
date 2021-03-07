@@ -36,12 +36,15 @@ function App() {
     if (!contracts.reptile) return;
     const contract = contracts.reptile
     const getDonations = async () => {
-      const dono = window.web3.utils.fromWei((await contract.methods.donations().call()).toString(), 'ether')
-      setDonations(dono);
+      const donos = (await contract.methods.donations().call())
+      if (donos) {
+        const dono = window.web3.utils.fromWei(donos.toString(), 'ether')
+        setDonations(dono);
+      }
     }
 
     getDonations()
-  }, [contracts])
+  }, [contracts, activePage])
 
 
   return (

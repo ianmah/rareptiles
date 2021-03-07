@@ -60,19 +60,17 @@ contract Reptile is ERC721Full {
   function buy(uint256 _tokenId) external payable {
       address buyer = msg.sender;
       address payable seller = address(uint160(ownerOf(_tokenId)));
-      // address payable sellerPayAddress = address(uint160(seller));
       uint payedPrice = msg.value;
 
-    //   require(getApproved(_tokenId) == address(this), "unapproved");
       require(reptile_exists[_tokenId], "reptile does not exist");
-
       uint salePrice = reptilesSalePrice[_tokenId];
       require(payedPrice >= salePrice);
 
-      // pay the seller
-    //   sellerPayAddress.transfer(salePrice);
+      uint donationAmt = payedPrice * 500 / 10000;
+      uint transferAmt = payedPrice - donationAmt;
 
-      seller.transfer(payedPrice);
+      donations += donationAmt;
+      seller.transfer(transferAmt);
 
       // transfer token
       transferFrom(seller, buyer, _tokenId);
