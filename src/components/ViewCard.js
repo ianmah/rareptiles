@@ -36,6 +36,7 @@ const StyledImg = styled.img`
     overflow: hidden;
     z-index: 300;
 `
+
 const QrImg = styled.img`
     position: absolute;
     background-color:rgba(0, 0, 0, 0);
